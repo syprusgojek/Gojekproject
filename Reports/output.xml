@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20190511 19:32:59.892" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
+<robot generated="20190511 21:44:39.046" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
 <suite source="D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite.robot" id="s1" name="Amazon Gojek Master Suite">
 <kw type="setup" name="Open browser">
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
@@ -11,12 +11,12 @@
 <assign>
 <var>${websites homepage url}</var>
 </assign>
-<msg timestamp="20190511 19:33:00.120" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
+<msg timestamp="20190511 21:44:39.324" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063B2470&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000646FAC8&gt;
 value https://www.amazon.com</msg>
-<msg timestamp="20190511 19:33:00.121" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
-<status status="PASS" endtime="20190511 19:33:00.121" starttime="20190511 19:33:00.118"></status>
+<msg timestamp="20190511 21:44:39.324" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
+<status status="PASS" endtime="20190511 21:44:39.324" starttime="20190511 21:44:39.321"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -27,34 +27,34 @@ value https://www.amazon.com</msg>
 <assign>
 <var>${Verify_Amazon_Home_Page_Logo_css}</var>
 </assign>
-<msg timestamp="20190511 19:33:00.124" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190511 21:44:39.330" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063B2400&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000646FF60&gt;
 value css=div[id*='nav-logo']</msg>
-<msg timestamp="20190511 19:33:00.125" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
-<status status="PASS" endtime="20190511 19:33:00.125" starttime="20190511 19:33:00.121"></status>
+<msg timestamp="20190511 21:44:39.331" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
+<status status="PASS" endtime="20190511 21:44:39.331" starttime="20190511 21:44:39.324"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="CustomSeleniumLibrary">
 <doc>Sets the timeout in seconds used by various keywords.</doc>
 <arguments>
 <arg>30</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.125" starttime="20190511 19:33:00.125"></status>
+<status status="PASS" endtime="20190511 21:44:39.331" starttime="20190511 21:44:39.331"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="CustomSeleniumLibrary">
 <doc>Sets Selenium 2's default implicit wait in seconds and</doc>
 <arguments>
 <arg>5 Seconds</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.126" starttime="20190511 19:33:00.125"></status>
+<status status="PASS" endtime="20190511 21:44:39.332" starttime="20190511 21:44:39.332"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${websites homepage url}</arg>
 </arguments>
-<msg timestamp="20190511 19:33:00.126" level="INFO">https://www.amazon.com</msg>
-<status status="PASS" endtime="20190511 19:33:00.126" starttime="20190511 19:33:00.126"></status>
+<msg timestamp="20190511 21:44:39.333" level="INFO">https://www.amazon.com</msg>
+<status status="PASS" endtime="20190511 21:44:39.333" starttime="20190511 21:44:39.332"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -64,8 +64,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${cred}</var>
 </assign>
-<msg timestamp="20190511 19:33:00.126" level="INFO">${cred} = credentials_enable_service</msg>
-<status status="PASS" endtime="20190511 19:33:00.126" starttime="20190511 19:33:00.126"></status>
+<msg timestamp="20190511 21:44:39.334" level="INFO">${cred} = credentials_enable_service</msg>
+<status status="PASS" endtime="20190511 21:44:39.334" starttime="20190511 21:44:39.333"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -75,8 +75,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20190511 19:33:00.127" level="INFO">${val} = False</msg>
-<status status="PASS" endtime="20190511 19:33:00.127" starttime="20190511 19:33:00.127"></status>
+<msg timestamp="20190511 21:44:39.334" level="INFO">${val} = False</msg>
+<status status="PASS" endtime="20190511 21:44:39.334" starttime="20190511 21:44:39.334"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -86,7 +86,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>${geo}</arg>
 <arg>${val}</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.127" starttime="20190511 19:33:00.127"></status>
+<status status="PASS" endtime="20190511 21:44:39.335" starttime="20190511 21:44:39.334"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -97,8 +97,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20190511 19:33:00.128" level="INFO">${prefs} = {u'credentials_enable_service': False}</msg>
-<status status="PASS" endtime="20190511 19:33:00.128" starttime="20190511 19:33:00.127"></status>
+<msg timestamp="20190511 21:44:39.335" level="INFO">${prefs} = {u'credentials_enable_service': False}</msg>
+<status status="PASS" endtime="20190511 21:44:39.335" starttime="20190511 21:44:39.335"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -109,8 +109,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${chrome_options}</var>
 </assign>
-<msg timestamp="20190511 19:33:00.128" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x00000000063D1048&gt;</msg>
-<status status="PASS" endtime="20190511 19:33:00.128" starttime="20190511 19:33:00.128"></status>
+<msg timestamp="20190511 21:44:39.336" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000000000646FB00&gt;</msg>
+<status status="PASS" endtime="20190511 21:44:39.336" starttime="20190511 21:44:39.336"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -119,7 +119,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>add_argument</arg>
 <arg>allow-running-insecure-content</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.129" starttime="20190511 19:33:00.128"></status>
+<status status="PASS" endtime="20190511 21:44:39.337" starttime="20190511 21:44:39.336"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -128,7 +128,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>add_argument</arg>
 <arg>disable-web-notification-custom-layouts</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.129" starttime="20190511 19:33:00.129"></status>
+<status status="PASS" endtime="20190511 21:44:39.337" starttime="20190511 21:44:39.337"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -137,7 +137,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>add_argument</arg>
 <arg>disable-notifications</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.129" starttime="20190511 19:33:00.129"></status>
+<status status="PASS" endtime="20190511 21:44:39.338" starttime="20190511 21:44:39.338"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -147,7 +147,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20190511 19:33:00.130" starttime="20190511 19:33:00.129"></status>
+<status status="PASS" endtime="20190511 21:44:39.339" starttime="20190511 21:44:39.338"></status>
 </kw>
 <kw name="Create Webdriver" library="CustomSeleniumLibrary">
 <doc>Creates an instance of a WebDriver.</doc>
@@ -156,16 +156,16 @@ value css=div[id*='nav-logo']</msg>
 <arg>chrome_options=${chrome_options}</arg>
 <arg>executable_path=${chrome_exe_path}</arg>
 </arguments>
-<msg timestamp="20190511 19:33:00.130" level="INFO">Creating an instance of the Chrome WebDriver</msg>
-<status status="PASS" endtime="20190511 19:33:02.758" starttime="20190511 19:33:00.130"></status>
+<msg timestamp="20190511 21:44:39.339" level="INFO">Creating an instance of the Chrome WebDriver</msg>
+<status status="PASS" endtime="20190511 21:44:41.951" starttime="20190511 21:44:39.339"></status>
 </kw>
 <kw name="Go To" library="CustomSeleniumLibrary">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>${websites homepage url}</arg>
 </arguments>
-<msg timestamp="20190511 19:33:02.758" level="INFO">Opening url 'https://www.amazon.com'</msg>
-<status status="PASS" endtime="20190511 19:33:04.330" starttime="20190511 19:33:02.758"></status>
+<msg timestamp="20190511 21:44:41.951" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20190511 21:44:55.446" starttime="20190511 21:44:41.951"></status>
 </kw>
 <kw name="Get Window Size" library="CustomSeleniumLibrary">
 <doc>Returns current window size as `width` then `height`.</doc>
@@ -173,32 +173,804 @@ value css=div[id*='nav-logo']</msg>
 <var>${w}</var>
 <var>${h}</var>
 </assign>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.378" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.378" starttime="20190511 19:33:14.360"></status>
+<msg timestamp="20190511 21:44:56.473" level="INFO">${w} = 1051</msg>
+<msg timestamp="20190511 21:44:56.473" level="INFO">${h} = 806</msg>
+<status status="PASS" endtime="20190511 21:44:56.473" starttime="20190511 21:44:55.447"></status>
 </kw>
-<msg timestamp="20190511 19:33:14.378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.434" level="FAIL">KeyError: 'width'</msg>
-<status status="FAIL" endtime="20190511 19:33:14.434" starttime="20190511 19:33:04.330"></status>
+<kw name="Get Window Size" library="CustomSeleniumLibrary">
+<doc>Returns current window size as `width` then `height`.</doc>
+<assign>
+<var>${a}</var>
+<var>${b}</var>
+</assign>
+<msg timestamp="20190511 21:44:56.478" level="INFO">${a} = 1051</msg>
+<msg timestamp="20190511 21:44:56.478" level="INFO">${b} = 806</msg>
+<status status="PASS" endtime="20190511 21:44:56.478" starttime="20190511 21:44:56.473"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:14.435" starttime="20190511 19:33:00.118"></status>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>1044</arg>
+</arguments>
+<assign>
+<var>${Width}</var>
+</assign>
+<msg timestamp="20190511 21:44:56.479" level="INFO">${Width} = 1044</msg>
+<status status="PASS" endtime="20190511 21:44:56.480" starttime="20190511 21:44:56.479"></status>
 </kw>
-<test id="s1-t1" name="TC_Select_Available_Headphone_And_Add_to_Cart">
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>788</arg>
+</arguments>
+<assign>
+<var>${Height}</var>
+</assign>
+<msg timestamp="20190511 21:44:56.481" level="INFO">${Height} = 788</msg>
+<status status="PASS" endtime="20190511 21:44:56.481" starttime="20190511 21:44:56.480"></status>
+</kw>
+<kw name="Set Window Size" library="CustomSeleniumLibrary">
+<doc>Sets the `width` and `height` of the current window to the specified values.</doc>
+<arguments>
+<arg>${Width}</arg>
+<arg>${Height}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:56.689" starttime="20190511 21:44:56.481"></status>
+</kw>
+<kw name="Get Webdriver Instance" library="CustomSeleniumLibrary">
+<assign>
+<var>${driverInstance}</var>
+</assign>
+<msg timestamp="20190511 21:44:56.689" level="INFO">${driverInstance} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="1ea3adf7204c9e607bd255a505ffbcac")&gt;</msg>
+<status status="PASS" endtime="20190511 21:44:56.689" starttime="20190511 21:44:56.689"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${driver}</arg>
+<arg>${driverInstance}</arg>
+</arguments>
+<msg timestamp="20190511 21:44:56.690" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="1ea3adf7204c9e607bd255a505ffbcac")&gt;</msg>
+<status status="PASS" endtime="20190511 21:44:56.690" starttime="20190511 21:44:56.689"></status>
+</kw>
+<kw name="Maximize Browser Window" library="CustomSeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190511 21:44:59.050" starttime="20190511 21:44:56.691"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Wait Keyword</arg>
+<arg>${Verify_Amazon_Home_Page_Logo_css}</arg>
+<arg>Amazon Logo</arg>
+</arguments>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Verify_Amazon_Home_Page_Logo_css}</arg>
+<arg>Amazon Logo</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.052" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:44:59.053" starttime="20190511 21:44:59.052"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:59.216" starttime="20190511 21:44:59.053"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:59.244" starttime="20190511 21:44:59.216"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:59.261" starttime="20190511 21:44:59.244"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:44:59.261" starttime="20190511 21:44:59.051"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:44:59.261" starttime="20190511 21:44:59.050"></status>
+</kw>
+<kw name="Login">
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Verification_Entities</arg>
+<arg>Verify_Amazon_Home_Page_Logo_css</arg>
+</arguments>
+<assign>
+<var>${Verify_Amazon_Home_Page_Logo_css}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.265" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x00000000064F57F0&gt;
+value css=div[id*='nav-logo']</msg>
+<msg timestamp="20190511 21:44:59.266" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
+<status status="PASS" endtime="20190511 21:44:59.266" starttime="20190511 21:44:59.262"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Home_Page_Sign_In_Text_xpath</arg>
+</arguments>
+<assign>
+<var>${Amazon_Home_Page_Sign_In_Text_xpath}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.269" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x00000000064F59E8&gt;
+value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
+<msg timestamp="20190511 21:44:59.269" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
+<status status="PASS" endtime="20190511 21:44:59.269" starttime="20190511 21:44:59.266"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Sign_In_Email_id_css</arg>
+</arguments>
+<assign>
+<var>${Amazon_Sign_In_Email_id_css}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.275" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x00000000064F5C18&gt;
+value css=input[id*='email']</msg>
+<msg timestamp="20190511 21:44:59.275" level="INFO">${Amazon_Sign_In_Email_id_css} = css=input[id*='email']</msg>
+<status status="PASS" endtime="20190511 21:44:59.275" starttime="20190511 21:44:59.269"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Sign_In_Password_css</arg>
+</arguments>
+<assign>
+<var>${Amazon_Sign_In_Password_css}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.279" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x0000000006512F28&gt;
+value css=input[id*='password']</msg>
+<msg timestamp="20190511 21:44:59.279" level="INFO">${Amazon_Sign_In_Password_css} = css=input[id*='password']</msg>
+<status status="PASS" endtime="20190511 21:44:59.279" starttime="20190511 21:44:59.275"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Sign_In_Button_css</arg>
+</arguments>
+<assign>
+<var>${Amazon_Sign_In_Button_css}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.284" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x0000000006512828&gt;
+value css=input[id*='Submit']</msg>
+<msg timestamp="20190511 21:44:59.284" level="INFO">${Amazon_Sign_In_Button_css} = css=input[id*='Submit']</msg>
+<status status="PASS" endtime="20190511 21:44:59.284" starttime="20190511 21:44:59.279"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Verification_Entities</arg>
+<arg>Verify_Amazon_Sign_In_Text_xpath</arg>
+</arguments>
+<assign>
+<var>${Verify_Amazon_Sign_In_Text_xpath}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.289" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x00000000065124E0&gt;
+value xpath=//h1[contains(text(),'Sign in')]</msg>
+<msg timestamp="20190511 21:44:59.289" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
+<status status="PASS" endtime="20190511 21:44:59.289" starttime="20190511 21:44:59.285"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Amazon_Home_Page_Sign_In_Text_xpath}</arg>
+<arg>Amazon sign in Text</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:44:59.290" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:44:59.290" starttime="20190511 21:44:59.290"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:59.371" starttime="20190511 21:44:59.290"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:59.402" starttime="20190511 21:44:59.371"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:44:59.422" starttime="20190511 21:44:59.402"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:44:59.422" starttime="20190511 21:44:59.289"></status>
+</kw>
+<kw name="Click Element" library="CustomSeleniumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Amazon_Home_Page_Sign_In_Text_xpath}</arg>
+</arguments>
+<msg timestamp="20190511 21:44:59.423" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Hello, Sign in')]/..)'.</msg>
+<status status="PASS" endtime="20190511 21:45:03.382" starttime="20190511 21:44:59.422"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Verify_Amazon_Sign_In_Text_xpath}</arg>
+<arg>Amazon sign in header text</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:03.384" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:03.384" starttime="20190511 21:45:03.383"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:03.493" starttime="20190511 21:45:03.384"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:03.521" starttime="20190511 21:45:03.493"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:03.542" starttime="20190511 21:45:03.521"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:03.542" starttime="20190511 21:45:03.382"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Amazon_Sign_In_Email_id_css}</arg>
+<arg>Sign In Email Id</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:03.544" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:03.544" starttime="20190511 21:45:03.543"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:03.624" starttime="20190511 21:45:03.544"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:03.649" starttime="20190511 21:45:03.624"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:03.669" starttime="20190511 21:45:03.649"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:03.669" starttime="20190511 21:45:03.543"></status>
+</kw>
+<kw name="Input Text Custom" library="Amazon_Python_Utility">
+<arguments>
+<arg>${driver}</arg>
+<arg>${Amazon_Sign_In_Email_id_css}</arg>
+<arg>syprusgojek@gmail.com</arg>
+</arguments>
+<msg timestamp="20190511 21:45:04.081" level="INFO">CSS is inputed</msg>
+<status status="PASS" endtime="20190511 21:45:04.081" starttime="20190511 21:45:03.669"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Amazon_Sign_In_Password_css}</arg>
+<arg>Sign In Password</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:04.083" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:04.083" starttime="20190511 21:45:04.082"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:04.169" starttime="20190511 21:45:04.083"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:04.195" starttime="20190511 21:45:04.169"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:04.212" starttime="20190511 21:45:04.195"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:04.212" starttime="20190511 21:45:04.081"></status>
+</kw>
+<kw name="Input Text Custom" library="Amazon_Python_Utility">
+<arguments>
+<arg>${driver}</arg>
+<arg>${Amazon_Sign_In_Password_css}</arg>
+<arg>RoBotFra@432</arg>
+</arguments>
+<msg timestamp="20190511 21:45:04.577" level="INFO">CSS is inputed</msg>
+<status status="PASS" endtime="20190511 21:45:04.577" starttime="20190511 21:45:04.212"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Amazon_Sign_In_Button_css}</arg>
+<arg>Sign In button</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:04.579" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:04.579" starttime="20190511 21:45:04.578"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:04.671" starttime="20190511 21:45:04.579"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:04.696" starttime="20190511 21:45:04.671"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:04.713" starttime="20190511 21:45:04.696"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:04.713" starttime="20190511 21:45:04.578"></status>
+</kw>
+<kw name="Click Element" library="CustomSeleniumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Amazon_Sign_In_Button_css}</arg>
+</arguments>
+<msg timestamp="20190511 21:45:04.714" level="INFO">Clicking element 'css=input[id*='Submit']'.</msg>
+<status status="PASS" endtime="20190511 21:45:10.093" starttime="20190511 21:45:04.713"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Verify_Amazon_Home_Page_Logo_css}</arg>
+<arg>Amazon logo</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:10.094" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:10.094" starttime="20190511 21:45:10.093"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:10.129" starttime="20190511 21:45:10.094"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:10.156" starttime="20190511 21:45:10.129"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:10.175" starttime="20190511 21:45:10.156"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:10.176" starttime="20190511 21:45:10.093"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:10.176" starttime="20190511 21:44:59.262"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:10.176" starttime="20190511 21:44:39.320"></status>
+</kw>
+<test id="s1-t1" name="TC_Remove_Earlier_Added_Headphones">
+<kw type="setup" name="Refresh the page">
+<kw name="Reload Page" library="CustomSeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" endtime="20190511 21:45:10.267" starttime="20190511 21:45:10.177"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:10.267" starttime="20190511 21:45:10.177"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Product_Cart_Link_xpath</arg>
+</arguments>
+<assign>
+<var>${Amazon_Product_Cart_Link_xpath}</var>
+</assign>
+<msg timestamp="20190511 21:45:10.282" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x0000000006500BE0&gt;
+value xpath=(//a[contains(@id,'nav-cart')])</msg>
+<msg timestamp="20190511 21:45:10.282" level="INFO">${Amazon_Product_Cart_Link_xpath} = xpath=(//a[contains(@id,'nav-cart')])</msg>
+<status status="PASS" endtime="20190511 21:45:10.282" starttime="20190511 21:45:10.269"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Product_Headphones_Titles_Added_In_Cart_xpath</arg>
+</arguments>
+<assign>
+<var>${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}</var>
+</assign>
+<msg timestamp="20190511 21:45:10.293" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x00000000065003C8&gt;
+value xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
+<msg timestamp="20190511 21:45:10.293" level="INFO">${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath} = xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
+<status status="PASS" endtime="20190511 21:45:10.293" starttime="20190511 21:45:10.283"></status>
+</kw>
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${locators_file_path}</arg>
+<arg>Locator_ids</arg>
+<arg>Amazon_Product_Delete_Buttons_Added_In_Cart_xpath</arg>
+</arguments>
+<assign>
+<var>${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}</var>
+</assign>
+<msg timestamp="20190511 21:45:10.298" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x0000000006500828&gt;
+value xpath=(//input[contains(@name,'submit.delete')])</msg>
+<msg timestamp="20190511 21:45:10.299" level="INFO">${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath} = xpath=(//input[contains(@name,'submit.delete')])</msg>
+<status status="PASS" endtime="20190511 21:45:10.299" starttime="20190511 21:45:10.294"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Amazon_Product_Cart_Link_xpath}</arg>
+<arg>Cart Icon</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:10.300" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:10.300" starttime="20190511 21:45:10.300"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:14.411" starttime="20190511 21:45:10.300"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:17.428" starttime="20190511 21:45:14.411"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:17.456" starttime="20190511 21:45:17.428"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:17.456" starttime="20190511 21:45:10.299"></status>
+</kw>
+<kw name="Click Element" library="CustomSeleniumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Amazon_Product_Cart_Link_xpath}</arg>
+</arguments>
+<msg timestamp="20190511 21:45:17.459" level="INFO">Clicking element 'xpath=(//a[contains(@id,'nav-cart')])'.</msg>
+<status status="PASS" endtime="20190511 21:45:32.003" starttime="20190511 21:45:17.458"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}</arg>
+<arg>Product Titles</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.005" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:32.006" starttime="20190511 21:45:32.005"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:32.096" starttime="20190511 21:45:32.006"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:32.121" starttime="20190511 21:45:32.096"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:32.140" starttime="20190511 21:45:32.121"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:32.141" starttime="20190511 21:45:32.004"></status>
+</kw>
+<kw name="Strip String" library="String">
+<doc>Remove leading and/or trailing whitespaces from the given string.</doc>
+<arguments>
+<arg>${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}</arg>
+<arg>characters=xpath=</arg>
+</arguments>
+<assign>
+<var>${amazon_product_headphone}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.141" level="INFO">${amazon_product_headphone} = (//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
+<status status="PASS" endtime="20190511 21:45:32.141" starttime="20190511 21:45:32.141"></status>
+</kw>
+<kw name="Get Matching Xpath Count" library="CustomSeleniumLibrary">
+<doc>Returns number of elements matching `xpath`</doc>
+<arguments>
+<arg>${amazon_product_headphone}</arg>
+</arguments>
+<assign>
+<var>${product_titles}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.152" level="INFO">${product_titles} = 1</msg>
+<status status="PASS" endtime="20190511 21:45:32.153" starttime="20190511 21:45:32.142"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${product_titles}+1</arg>
+</arguments>
+<assign>
+<var>${product_titles}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.153" level="INFO">${product_titles} = 2</msg>
+<status status="PASS" endtime="20190511 21:45:32.153" starttime="20190511 21:45:32.153"></status>
+</kw>
+<kw type="for" name="${i} IN RANGE [ 1 | ${product_titles} ]">
+<kw type="foritem" name="${i} = 1">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<assign>
+<var>${delete_headphone}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.154" level="INFO">${delete_headphone} = </msg>
+<status status="PASS" endtime="20190511 21:45:32.154" starttime="20190511 21:45:32.154"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>SEPARATOR=</arg>
+<arg>${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}</arg>
+<arg>[${i}]</arg>
+</arguments>
+<assign>
+<var>${delete_headphone}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.155" level="INFO">${delete_headphone} = xpath=(//input[contains(@name,'submit.delete')])[1]</msg>
+<status status="PASS" endtime="20190511 21:45:32.155" starttime="20190511 21:45:32.154"></status>
+</kw>
+<kw name="Wait Keyword">
+<arguments>
+<arg>${delete_headphone}</arg>
+<arg>Delete Headphone</arg>
+</arguments>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<assign>
+<var>${Delay}</var>
+</assign>
+<msg timestamp="20190511 21:45:32.155" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:32.155" starttime="20190511 21:45:32.155"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>Page does not contain the ${Message}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:32.240" starttime="20190511 21:45:32.156"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not displayed on the page</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:32.266" starttime="20190511 21:45:32.240"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${Delay}</arg>
+<arg>${Message} is not enabled</arg>
+</arguments>
+<status status="PASS" endtime="20190511 21:45:32.284" starttime="20190511 21:45:32.267"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:32.284" starttime="20190511 21:45:32.155"></status>
+</kw>
+<kw name="Click Element" library="CustomSeleniumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${delete_headphone}</arg>
+</arguments>
+<msg timestamp="20190511 21:45:32.285" level="INFO">Clicking element 'xpath=(//input[contains(@name,'submit.delete')])[1]'.</msg>
+<status status="PASS" endtime="20190511 21:45:33.122" starttime="20190511 21:45:32.285"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:33.122" starttime="20190511 21:45:32.154"></status>
+</kw>
+<status status="PASS" endtime="20190511 21:45:33.122" starttime="20190511 21:45:32.154"></status>
+</kw>
 <tags>
-<tag>Sanity</tag>
-<tag>TC1</tag>
+<tag>TC3</tag>
 </tags>
-<status status="FAIL" endtime="20190511 19:33:14.436" critical="yes" starttime="20190511 19:33:14.435">Parent suite setup failed:
-KeyError: 'width'</status>
+<status status="PASS" endtime="20190511 21:45:33.122" critical="yes" starttime="20190511 21:45:10.176"></status>
 </test>
 <kw type="teardown" name="Browser Close">
 <kw name="Logout">
@@ -211,12 +983,12 @@ KeyError: 'width'</status>
 <assign>
 <var>${Amazon_Home_Page_Sign_In_Text_xpath}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.447" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190511 21:45:33.134" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006465630&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000065006D8&gt;
 value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
-<msg timestamp="20190511 19:33:14.447" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
-<status status="PASS" endtime="20190511 19:33:14.447" starttime="20190511 19:33:14.441"></status>
+<msg timestamp="20190511 21:45:33.134" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
+<status status="PASS" endtime="20190511 21:45:33.134" starttime="20190511 21:45:33.126"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -227,12 +999,12 @@ value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
 <assign>
 <var>${Amazon_Hello_Text_xpath}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.452" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190511 21:45:33.141" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006465F28&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006500C18&gt;
 value xpath=(//span[contains(text(),'Hello')])</msg>
-<msg timestamp="20190511 19:33:14.452" level="INFO">${Amazon_Hello_Text_xpath} = xpath=(//span[contains(text(),'Hello')])</msg>
-<status status="PASS" endtime="20190511 19:33:14.452" starttime="20190511 19:33:14.447"></status>
+<msg timestamp="20190511 21:45:33.141" level="INFO">${Amazon_Hello_Text_xpath} = xpath=(//span[contains(text(),'Hello')])</msg>
+<status status="PASS" endtime="20190511 21:45:33.141" starttime="20190511 21:45:33.134"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -243,12 +1015,12 @@ value xpath=(//span[contains(text(),'Hello')])</msg>
 <assign>
 <var>${Amazon_Sign_Out_Button_xpath}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.456" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190511 21:45:33.148" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000646C0B8&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006500BE0&gt;
 value xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
-<msg timestamp="20190511 19:33:14.456" level="INFO">${Amazon_Sign_Out_Button_xpath} = xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
-<status status="PASS" endtime="20190511 19:33:14.456" starttime="20190511 19:33:14.452"></status>
+<msg timestamp="20190511 21:45:33.148" level="INFO">${Amazon_Sign_Out_Button_xpath} = xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
+<status status="PASS" endtime="20190511 21:45:33.148" starttime="20190511 21:45:33.142"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -259,12 +1031,12 @@ value xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
 <assign>
 <var>${Verify_Amazon_Sign_In_Text_xpath}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.460" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190511 21:45:33.157" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000646CDD8&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006500128&gt;
 value xpath=//h1[contains(text(),'Sign in')]</msg>
-<msg timestamp="20190511 19:33:14.460" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
-<status status="PASS" endtime="20190511 19:33:14.460" starttime="20190511 19:33:14.457"></status>
+<msg timestamp="20190511 21:45:33.157" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
+<status status="PASS" endtime="20190511 21:45:33.157" starttime="20190511 21:45:33.149"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -286,8 +1058,8 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.461" level="INFO">${Delay} = 30s</msg>
-<status status="PASS" endtime="20190511 19:33:14.462" starttime="20190511 19:33:14.461"></status>
+<msg timestamp="20190511 21:45:33.158" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:33.158" starttime="20190511 21:45:33.158"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -296,26 +1068,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.545" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.545" starttime="20190511 19:33:14.537"></status>
-</kw>
-<msg timestamp="20190511 19:33:14.545" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.550" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.551" starttime="20190511 19:33:14.462"></status>
+<status status="PASS" endtime="20190511 21:45:33.251" starttime="20190511 21:45:33.159"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -324,26 +1077,7 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.562" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.562" starttime="20190511 19:33:14.556"></status>
-</kw>
-<msg timestamp="20190511 19:33:14.562" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.567" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.568" starttime="20190511 19:33:14.551"></status>
+<status status="PASS" endtime="20190511 21:45:33.279" starttime="20190511 21:45:33.252"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -352,30 +1086,11 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.578" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.578" starttime="20190511 19:33:14.572"></status>
+<status status="PASS" endtime="20190511 21:45:33.297" starttime="20190511 21:45:33.280"></status>
 </kw>
-<msg timestamp="20190511 19:33:14.578" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.583" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.584" starttime="20190511 19:33:14.568"></status>
+<status status="PASS" endtime="20190511 21:45:33.298" starttime="20190511 21:45:33.158"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:14.584" starttime="20190511 19:33:14.461"></status>
-</kw>
-<status status="FAIL" endtime="20190511 19:33:14.584" starttime="20190511 19:33:14.461"></status>
+<status status="PASS" endtime="20190511 21:45:33.298" starttime="20190511 21:45:33.157"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -388,29 +1103,10 @@ from unknown error: web view not found
 <arguments>
 <arg>${Amazon_Hello_Text_xpath}</arg>
 </arguments>
-<msg timestamp="20190511 19:33:14.585" level="INFO">Simulating Mouse Over on element 'xpath=(//span[contains(text(),'Hello')])'</msg>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.596" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.597" starttime="20190511 19:33:14.590"></status>
+<msg timestamp="20190511 21:45:33.298" level="INFO">Simulating Mouse Over on element 'xpath=(//span[contains(text(),'Hello')])'</msg>
+<status status="PASS" endtime="20190511 21:45:33.400" starttime="20190511 21:45:33.298"></status>
 </kw>
-<msg timestamp="20190511 19:33:14.597" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.601" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.601" starttime="20190511 19:33:14.585"></status>
-</kw>
-<status status="FAIL" endtime="20190511 19:33:14.601" starttime="20190511 19:33:14.584"></status>
+<status status="PASS" endtime="20190511 21:45:33.400" starttime="20190511 21:45:33.298"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -432,8 +1128,8 @@ from unknown error: web view not found
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.602" level="INFO">${Delay} = 30s</msg>
-<status status="PASS" endtime="20190511 19:33:14.602" starttime="20190511 19:33:14.602"></status>
+<msg timestamp="20190511 21:45:33.401" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:33.401" starttime="20190511 21:45:33.401"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -442,26 +1138,7 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.686" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.686" starttime="20190511 19:33:14.680"></status>
-</kw>
-<msg timestamp="20190511 19:33:14.686" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.690" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.690" starttime="20190511 19:33:14.603"></status>
+<status status="PASS" endtime="20190511 21:45:33.487" starttime="20190511 21:45:33.401"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -470,26 +1147,7 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.702" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.702" starttime="20190511 19:33:14.695"></status>
-</kw>
-<msg timestamp="20190511 19:33:14.702" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.707" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.707" starttime="20190511 19:33:14.690"></status>
+<status status="PASS" endtime="20190511 21:45:33.544" starttime="20190511 21:45:33.488"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -498,30 +1156,11 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.721" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.721" starttime="20190511 19:33:14.715"></status>
+<status status="PASS" endtime="20190511 21:45:33.569" starttime="20190511 21:45:33.545"></status>
 </kw>
-<msg timestamp="20190511 19:33:14.721" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.725" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.726" starttime="20190511 19:33:14.707"></status>
+<status status="PASS" endtime="20190511 21:45:33.571" starttime="20190511 21:45:33.401"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:14.726" starttime="20190511 19:33:14.601"></status>
-</kw>
-<status status="FAIL" endtime="20190511 19:33:14.726" starttime="20190511 19:33:14.601"></status>
+<status status="PASS" endtime="20190511 21:45:33.572" starttime="20190511 21:45:33.400"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -534,29 +1173,10 @@ from unknown error: web view not found
 <arguments>
 <arg>${Amazon_Sign_Out_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190511 19:33:14.727" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Sign Out')]/..)'.</msg>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.738" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.738" starttime="20190511 19:33:14.732"></status>
+<msg timestamp="20190511 21:45:33.573" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Sign Out')]/..)'.</msg>
+<status status="PASS" endtime="20190511 21:45:36.916" starttime="20190511 21:45:33.573"></status>
 </kw>
-<msg timestamp="20190511 19:33:14.739" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.743" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.743" starttime="20190511 19:33:14.727"></status>
-</kw>
-<status status="FAIL" endtime="20190511 19:33:14.744" starttime="20190511 19:33:14.726"></status>
+<status status="PASS" endtime="20190511 21:45:36.916" starttime="20190511 21:45:33.572"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -578,8 +1198,8 @@ from unknown error: web view not found
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190511 19:33:14.745" level="INFO">${Delay} = 30s</msg>
-<status status="PASS" endtime="20190511 19:33:14.745" starttime="20190511 19:33:14.745"></status>
+<msg timestamp="20190511 21:45:36.918" level="INFO">${Delay} = 30s</msg>
+<status status="PASS" endtime="20190511 21:45:36.918" starttime="20190511 21:45:36.917"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -588,26 +1208,7 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.819" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.820" starttime="20190511 19:33:14.814"></status>
-</kw>
-<msg timestamp="20190511 19:33:14.820" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.823" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.823" starttime="20190511 19:33:14.745"></status>
+<status status="PASS" endtime="20190511 21:45:36.936" starttime="20190511 21:45:36.918"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -616,26 +1217,7 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.834" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.835" starttime="20190511 19:33:14.828"></status>
-</kw>
-<msg timestamp="20190511 19:33:14.835" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.838" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.838" starttime="20190511 19:33:14.823"></status>
+<status status="PASS" endtime="20190511 21:45:36.968" starttime="20190511 21:45:36.936"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -644,178 +1226,34 @@ from unknown error: web view not found
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="CustomSeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20190511 19:33:14.850" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.850" starttime="20190511 19:33:14.843"></status>
+<status status="PASS" endtime="20190511 21:45:36.990" starttime="20190511 21:45:36.968"></status>
 </kw>
-<msg timestamp="20190511 19:33:14.850" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.854" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<status status="FAIL" endtime="20190511 19:33:14.854" starttime="20190511 19:33:14.839"></status>
+<status status="PASS" endtime="20190511 21:45:36.990" starttime="20190511 21:45:36.917"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:14.854" starttime="20190511 19:33:14.744"></status>
+<status status="PASS" endtime="20190511 21:45:36.990" starttime="20190511 21:45:36.916"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:14.854" starttime="20190511 19:33:14.744"></status>
-</kw>
-<status status="FAIL" endtime="20190511 19:33:14.854" starttime="20190511 19:33:14.440"></status>
+<status status="PASS" endtime="20190511 21:45:36.990" starttime="20190511 21:45:33.125"></status>
 </kw>
 <kw name="Close All Browsers" library="CustomSeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190511 19:33:16.937" starttime="20190511 19:33:14.854"></status>
+<status status="PASS" endtime="20190511 21:45:39.365" starttime="20190511 21:45:36.990"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:16.937" starttime="20190511 19:33:14.440">Several failures occurred:
-
-1) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-2) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-3) NoSuchWindowException: Message: no such window: target window already closed
-    [ Message content over the limit has been removed. ]
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-10) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-11) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)</status>
+<status status="PASS" endtime="20190511 21:45:39.366" starttime="20190511 21:45:33.125"></status>
 </kw>
-<status status="FAIL" endtime="20190511 19:33:16.937" starttime="20190511 19:32:59.895">Suite setup failed:
-KeyError: 'width'
-
-Also suite teardown failed:
-Several failures occurred:
-
-1) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-2) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-3) NoSuchWindowException: Message: no such window: target window already closed
-    [ Message content over the limit has been removed. ]
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-10) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-
-
-11) NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)</status>
+<status status="PASS" endtime="20190511 21:45:39.366" starttime="20190511 21:44:39.051"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">Sanity</stat>
-<stat fail="1" pass="0">TC1</stat>
+<stat fail="0" pass="1">TC3</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Amazon Gojek Master Suite" pass="0">Amazon Gojek Master Suite</stat>
+<stat fail="0" id="s1" name="Amazon Gojek Master Suite" pass="1">Amazon Gojek Master Suite</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190511 19:33:14.378" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.545" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.562" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.578" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.597" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.686" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.702" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.721" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.739" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.820" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.835" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
-<msg timestamp="20190511 19:33:14.850" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=73.0.3683.103)
-  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.16299 x86_64)
-</msg>
 </errors>
 </robot>

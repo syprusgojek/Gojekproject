@@ -4,6 +4,7 @@ Suite Teardown    Browser Close
 Test Setup        Refresh the page
 Library           D:\\Amazon Automation\\Go-Jek\\Python Utilities\\CustomSeleniumLibrary.py
 Library           D:\\Amazon Automation\\Go-Jek\\Python Utilities\\Amazon_Python_Utility.py
+Library           String
 
 *** Variables ***
 ${driver}         ${EMPTY}
@@ -35,6 +36,47 @@ TC_Select_Available_Headphone_And_Add_to_Cart
     Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}    Added to Cart Message
     Wait Keyword    ${Amazon_Cart_Close_Button_xpath}    Close Button
     Click Element    ${Amazon_Cart_Close_Button_xpath}
+
+TC_Search_MacBookPro_Add_Second_Product_To_Cart
+    [Tags]    TC2    Sanity
+    ${Amazon_Search_Text_Box_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Text_Box_xpath
+    ${Amazon_Search_Submit_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Submit_Button_xpath
+    ${Amazon_Search_Second_Product_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Second_Product_xpath
+    ${Amazon_Product_Quantity_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Quantity_Drop_Down_xpath
+    ${Amazon_Product_Quantity_2_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Quantity_2_xpath
+    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Verification_Entities    Verify_Amazon_Added_To_Cart_Text_Message_xpath
+    ${Amazon_Add_To_Cart_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Add_To_Cart_Button_xpath
+    ${Amazon_Cart_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Close_Button_xpath
+    Wait Keyword    ${Amazon_Search_Text_Box_xpath}    Search Text Box
+    Input Text    ${Amazon_Search_Text_Box_xpath}    Macbook pro
+    Wait Keyword    ${Amazon_Search_Submit_Button_xpath}    Headphones
+    Click Element    ${Amazon_Search_Submit_Button_xpath}
+    Wait Keyword    ${Amazon_Search_Second_Product_xpath}    Macbook second product
+    Click Element    ${Amazon_Search_Second_Product_xpath}
+    Wait Keyword    ${Amazon_Product_Quantity_Drop_Down_xpath}    Quantity dropdown
+    Select From List By Value    ${Amazon_Product_Quantity_Drop_Down_xpath}    2
+    Wait Keyword    ${Amazon_Add_To_Cart_Button_xpath}    Amazon Add to cart button
+    Click Element    ${Amazon_Add_To_Cart_Button_xpath}
+    Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}    Added to Cart Message
+    Wait Keyword    ${Amazon_Cart_Close_Button_xpath}    Close Button
+    Click Element    ${Amazon_Cart_Close_Button_xpath}
+
+TC_Remove_Earlier_Added_Headphones
+    [Tags]    TC3
+    ${Amazon_Product_Cart_Link_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Cart_Link_xpath
+    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Headphones_Titles_Added_In_Cart_xpath
+    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Delete_Buttons_Added_In_Cart_xpath
+    Wait Keyword    ${Amazon_Product_Cart_Link_xpath}    Cart Icon
+    Click Element    ${Amazon_Product_Cart_Link_xpath}
+    Wait Keyword    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}    Product Titles
+    ${amazon_product_headphone}=    Strip String    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}    characters=xpath=
+    ${product_titles}=    Get Matching Xpath Count    ${amazon_product_headphone}
+    ${product_titles}=    Evaluate    ${product_titles}+1
+    :FOR    ${i}     IN RANGE    1    ${product_titles}
+    \    ${delete_headphone}=    Set Variable    ${EMPTY}
+    \    ${delete_headphone}=    Catenate    SEPARATOR=    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}    [${i}]
+    \    Wait Keyword    ${delete_headphone}    Delete Headphone
+    \    Click Element    ${delete_headphone}
 
 *** Keywords ***
 Open browser
