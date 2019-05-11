@@ -14,31 +14,8 @@ ${Credentials_file_path}    D:\\Amazon Automation\\Go-Jek\\Credentials\\Amazon_C
 ${chrome_exe_path}    D:\\Amazon Automation\\Go-Jek\\Driver for chrome\\chromedriver.exe
 
 *** Test Cases ***
-TC_Select_Available_Headphone_And_Add_to_Cart
-    [Tags]    TC1    Sanity
-    ${Amazon_Departments_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Departments_Drop_Down_xpath
-    ${Amazon_Electronics_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Electronics_Drop_Down_xpath
-    ${Amazon_Headphones_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Headphones_Drop_Down_xpath
-    ${Amazon_Headphones_First_Product_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Headphones_First_Product_xpath
-    ${Amazon_Add_To_Cart_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Add_To_Cart_Button_xpath
-    ${Amazon_Cart_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Close_Button_xpath
-    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Verification_Entities    Verify_Amazon_Added_To_Cart_Text_Message_xpath
-    Wait Keyword    ${Amazon_Departments_Drop_Down_xpath}    Amazon Departments Drop Down
-    Mouse Over    ${Amazon_Departments_Drop_Down_xpath}
-    Wait Keyword    ${Amazon_Electronics_Drop_Down_xpath}    Electronics dropdown
-    Click Element    ${Amazon_Electronics_Drop_Down_xpath}
-    Wait Keyword    ${Amazon_Headphones_Drop_Down_xpath}    Headphones
-    Click Element    ${Amazon_Headphones_Drop_Down_xpath}
-    Wait Keyword    ${Amazon_Headphones_First_Product_xpath}    Amazon First Product
-    Click Element    ${Amazon_Headphones_First_Product_xpath}
-    Wait Keyword    ${Amazon_Add_To_Cart_Button_xpath}    Add to Cart Button
-    Click Element    ${Amazon_Add_To_Cart_Button_xpath}
-    Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}    Added to Cart Message
-    Wait Keyword    ${Amazon_Cart_Close_Button_xpath}    Close Button
-    Click Element    ${Amazon_Cart_Close_Button_xpath}
-
 TC_Search_MacBookPro_Add_Second_Product_To_Cart
-    [Tags]    TC2    Sanity
+    [Tags]    TC1    Sanity
     ${Amazon_Search_Text_Box_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Text_Box_xpath
     ${Amazon_Search_Submit_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Submit_Button_xpath
     ${Amazon_Search_Second_Product_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Second_Product_xpath
@@ -65,28 +42,10 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     Comment    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
     Wait Keyword    ${Amazon_Macbook_Order_Continue_Button_xpath}    Continue button
     Click Element    ${Amazon_Macbook_Order_Continue_Button_xpath}
-    sleep    2s
     Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_Macbook_xpath}    Added to Cart Message
 
-TC_Remove_Earlier_Added_Headphones
-    [Tags]    TC3    Sanity
-    ${Amazon_Product_Cart_Link_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Cart_Link_xpath
-    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Headphones_Titles_Added_In_Cart_xpath
-    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Delete_Buttons_Added_In_Cart_xpath
-    Wait Keyword    ${Amazon_Product_Cart_Link_xpath}    Cart Icon
-    Click Element    ${Amazon_Product_Cart_Link_xpath}
-    Wait Keyword    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}    Product Titles
-    ${amazon_product_headphone}=    Strip String    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}    characters=xpath=
-    ${product_titles}=    Get Matching Xpath Count    ${amazon_product_headphone}
-    ${product_titles}=    Evaluate    ${product_titles}+1
-    :FOR    ${i}     IN RANGE    1    ${product_titles}
-    \    ${delete_headphone}=    Set Variable    ${EMPTY}
-    \    ${delete_headphone}=    Catenate    SEPARATOR=    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}    [${i}]
-    \    Wait Keyword    ${delete_headphone}    Delete Headphone
-    \    Click Element    ${delete_headphone}
-
 TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
-    [Tags]    TC4    Sanity
+    [Tags]    TC2    Sanity
     ${Amazon_Product_Cart_Link_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Cart_Link_xpath
     ${Amazon_Product_MacBook_Titles_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_MacBook_Titles_Added_In_Cart_xpath
     ${Amazon_Product_Quantity_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Quantity_Drop_Down_xpath
@@ -146,7 +105,7 @@ Refresh the page
 Wait Keyword
     [Arguments]    ${locator}    ${Message}
     #log    ${locator}
-    ${Delay} =    Convert To String    40s
+    ${Delay} =    Convert To String    30s
     Wait Until Page Contains Element    ${locator}    ${Delay}    Page does not contain the ${Message}
     Wait Until Element Is Visible    ${locator}    ${Delay}    ${Message} is not displayed on the page
     Wait Until Element Is Enabled    ${locator}    ${Delay}    ${Message} is not enabled
