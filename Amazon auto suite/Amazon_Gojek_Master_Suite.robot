@@ -67,14 +67,25 @@ Login
     ${Amazon_Sign_In_Email_id_css}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Sign_In_Email_id_css
     ${Amazon_Sign_In_Password_css}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Sign_In_Password_css
     ${Amazon_Sign_In_Button_css}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Sign_In_Button_css
+    ${Verify_Amazon_Sign_In_Text_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Verification_Entities    Verify_Amazon_Sign_In_Text_xpath
     Wait Keyword    ${Amazon_Home_Page_Sign_In_Text_xpath}    Amazon sign in Text
     Click Element    ${Amazon_Home_Page_Sign_In_Text_xpath}
+    Wait Keyword    ${Verify_Amazon_Sign_In_Text_xpath}    Amazon sign in header text
     Wait Keyword    ${Amazon_Sign_In_Email_id_css}    Sign In Email Id
     Input Text Custom    ${driver}    ${Amazon_Sign_In_Email_id_css}    syprusgojek@gmail.com
     Wait Keyword    ${Amazon_Sign_In_Password_css}    Sign In Password
     Input Text Custom    ${driver}    ${Amazon_Sign_In_Password_css}    RoBotFra@432
     Wait Keyword    ${Amazon_Sign_In_Button_css}    Sign In button
     Click Element    ${Amazon_Sign_In_Button_css}
-    Wait Keyword    ${Verify_Amazon_Home_Page_Logo_css}    Home page logo
+    Wait Keyword    ${Verify_Amazon_Home_Page_Logo_css}    Amazon logo
 
 Logout
+    ${Amazon_Home_Page_Sign_In_Text_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Home_Page_Sign_In_Text_xpath
+    ${Amazon_Hello_Text_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Hello_Text_xpath
+    ${Amazon_Sign_Out_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Sign_Out_Button_xpath
+    ${Verify_Amazon_Sign_In_Text_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Verification_Entities    Verify_Amazon_Sign_In_Text_xpath
+    Run Keyword And Continue On Failure    Wait Keyword    ${Amazon_Hello_Text_xpath}    Amazon sign in Text
+    Run Keyword And Continue On Failure    Mouse Over    ${Amazon_Hello_Text_xpath}
+    Run Keyword And Continue On Failure    Wait Keyword    ${Amazon_Sign_Out_Button_xpath}    Amazon Sign Out Button
+    Run Keyword And Continue On Failure    Click Element    ${Amazon_Sign_Out_Button_xpath}
+    Run Keyword And Continue On Failure    Wait Keyword    ${Verify_Amazon_Sign_In_Text_xpath}    Amazon sign in header text
