@@ -15,7 +15,26 @@ ${chrome_exe_path}    D:\\Amazon Automation\\Go-Jek\\Driver for chrome\\chromedr
 *** Test Cases ***
 TC_Select_Available_Headphone_And_Add_to_Cart
     [Tags]    TC1    Sanity
-    log    hi
+    ${Amazon_Departments_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Departments_Drop_Down_xpath
+    ${Amazon_Electronics_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Electronics_Drop_Down_xpath
+    ${Amazon_Headphones_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Headphones_Drop_Down_xpath
+    ${Amazon_Headphones_First_Product_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Headphones_First_Product_xpath
+    ${Amazon_Add_To_Cart_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Add_To_Cart_Button_xpath
+    ${Amazon_Cart_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Close_Button_xpath
+    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Verification_Entities    Verify_Amazon_Added_To_Cart_Text_Message_xpath
+    Wait Keyword    ${Amazon_Departments_Drop_Down_xpath}    Amazon Departments Drop Down
+    Mouse Over    ${Amazon_Departments_Drop_Down_xpath}
+    Wait Keyword    ${Amazon_Electronics_Drop_Down_xpath}    Electronics dropdown
+    Click Element    ${Amazon_Electronics_Drop_Down_xpath}
+    Wait Keyword    ${Amazon_Headphones_Drop_Down_xpath}    Headphones
+    Click Element    ${Amazon_Headphones_Drop_Down_xpath}
+    Wait Keyword    ${Amazon_Headphones_First_Product_xpath}    Amazon First Product
+    Click Element    ${Amazon_Headphones_First_Product_xpath}
+    Wait Keyword    ${Amazon_Add_To_Cart_Button_xpath}    Add to Cart Button
+    Click Element    ${Amazon_Add_To_Cart_Button_xpath}
+    Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_xpath}    Added to Cart Message
+    Wait Keyword    ${Amazon_Cart_Close_Button_xpath}    Close Button
+    Click Element    ${Amazon_Cart_Close_Button_xpath}
 
 *** Keywords ***
 Open browser
