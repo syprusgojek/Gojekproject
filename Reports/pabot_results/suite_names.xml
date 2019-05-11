@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20190511 23:59:40.078" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
+<robot generated="20190512 01:34:00.945" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
 <suite id="s1" name="Suites">
 <suite source="D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel1.robot" id="s1-s1" name="Amazon Gojek Master Suite Parallel1">
 <kw type="setup" name="Open browser">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.288" starttime="20190511 23:59:40.288"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.139" starttime="20190512 01:34:01.139"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.288" starttime="20190511 23:59:40.287"></status>
+<status status="PASS" endtime="20190512 01:34:01.139" starttime="20190512 01:34:01.138"></status>
 </kw>
 <test id="s1-s1-t1" name="TC_Select_Available_Headphone_And_Add_to_Cart">
 <kw type="setup" name="Refresh the page">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.289" starttime="20190511 23:59:40.289"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.140" starttime="20190512 01:34:01.140"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.289" starttime="20190511 23:59:40.289"></status>
+<status status="PASS" endtime="20190512 01:34:01.141" starttime="20190512 01:34:01.140"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.289" starttime="20190511 23:59:40.289"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.141" starttime="20190512 01:34:01.141"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC1</tag>
 </tags>
-<status status="PASS" endtime="20190511 23:59:40.289" critical="yes" starttime="20190511 23:59:40.288"></status>
+<status status="PASS" endtime="20190512 01:34:01.141" critical="yes" starttime="20190512 01:34:01.139"></status>
 </test>
 <test id="s1-s1-t2" name="TC_Remove_Earlier_Added_Headphones">
 <kw type="setup" name="Refresh the page">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.291" starttime="20190511 23:59:40.290"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.142" starttime="20190512 01:34:01.142"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.291" starttime="20190511 23:59:40.290"></status>
+<status status="PASS" endtime="20190512 01:34:01.142" starttime="20190512 01:34:01.142"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.291" starttime="20190511 23:59:40.291"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.142" starttime="20190512 01:34:01.142"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC2</tag>
 </tags>
-<status status="PASS" endtime="20190511 23:59:40.291" critical="yes" starttime="20190511 23:59:40.290"></status>
+<status status="PASS" endtime="20190512 01:34:01.142" critical="yes" starttime="20190512 01:34:01.141"></status>
 </test>
 <kw type="teardown" name="Browser Close">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.292" starttime="20190511 23:59:40.292"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.143" starttime="20190512 01:34:01.143"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.292" starttime="20190511 23:59:40.291"></status>
+<status status="PASS" endtime="20190512 01:34:01.143" starttime="20190512 01:34:01.143"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.292" starttime="20190511 23:59:40.101"></status>
+<status status="PASS" endtime="20190512 01:34:01.143" starttime="20190512 01:34:00.964"></status>
 </suite>
 <suite source="D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel2.robot" id="s1-s2" name="Amazon Gojek Master Suite Parallel2">
 <kw type="setup" name="Open browser">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.297" starttime="20190511 23:59:40.297"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.148" starttime="20190512 01:34:01.148"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.297" starttime="20190511 23:59:40.297"></status>
+<status status="PASS" endtime="20190512 01:34:01.148" starttime="20190512 01:34:01.148"></status>
 </kw>
 <test id="s1-s2-t1" name="TC_Search_MacBookPro_Add_Second_Product_To_Cart">
 <kw type="setup" name="Refresh the page">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.298" starttime="20190511 23:59:40.298"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.150" starttime="20190512 01:34:01.149"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.298" starttime="20190511 23:59:40.297"></status>
+<status status="PASS" endtime="20190512 01:34:01.150" starttime="20190512 01:34:01.149"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.298" starttime="20190511 23:59:40.298"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.150" starttime="20190512 01:34:01.150"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC1</tag>
 </tags>
-<status status="PASS" endtime="20190511 23:59:40.298" critical="yes" starttime="20190511 23:59:40.297"></status>
+<status status="PASS" endtime="20190512 01:34:01.150" critical="yes" starttime="20190512 01:34:01.149"></status>
 </test>
 <test id="s1-s2-t2" name="TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout">
 <kw type="setup" name="Refresh the page">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.299" starttime="20190511 23:59:40.299"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.151" starttime="20190512 01:34:01.151"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.299" starttime="20190511 23:59:40.299"></status>
+<status status="PASS" endtime="20190512 01:34:01.151" starttime="20190512 01:34:01.151"></status>
 </kw>
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.300" starttime="20190511 23:59:40.299"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.151" starttime="20190512 01:34:01.151"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC2</tag>
 </tags>
-<status status="PASS" endtime="20190511 23:59:40.300" critical="yes" starttime="20190511 23:59:40.299"></status>
+<status status="PASS" endtime="20190512 01:34:01.151" critical="yes" starttime="20190512 01:34:01.150"></status>
 </test>
 <kw type="teardown" name="Browser Close">
 <kw name="No Operation" library="BuiltIn">
 <doc>Does absolutely nothing.</doc>
-<status status="NOT_RUN" endtime="20190511 23:59:40.300" starttime="20190511 23:59:40.300"></status>
+<status status="NOT_RUN" endtime="20190512 01:34:01.152" starttime="20190512 01:34:01.152"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.300" starttime="20190511 23:59:40.300"></status>
+<status status="PASS" endtime="20190512 01:34:01.152" starttime="20190512 01:34:01.152"></status>
 </kw>
-<status status="PASS" endtime="20190511 23:59:40.300" starttime="20190511 23:59:40.292"></status>
+<status status="PASS" endtime="20190512 01:34:01.152" starttime="20190512 01:34:01.144"></status>
 </suite>
-<status status="PASS" endtime="20190511 23:59:40.301" starttime="20190511 23:59:40.082"></status>
+<status status="PASS" endtime="20190512 01:34:01.153" starttime="20190512 01:34:00.948"></status>
 </suite>
 <statistics>
 <total>
@@ -126,9 +126,9 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20190511 23:59:40.067" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel1.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190511 23:59:40.071" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel2.robot': Non-existing setting ''.</msg>
-<msg timestamp="20190511 23:59:40.101" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel1.robot': Setting variable '' failed: Invalid variable name ''.</msg>
-<msg timestamp="20190511 23:59:40.293" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel2.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190512 01:34:00.933" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel1.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190512 01:34:00.937" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel2.robot': Non-existing setting ''.</msg>
+<msg timestamp="20190512 01:34:00.964" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel1.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+<msg timestamp="20190512 01:34:01.144" level="ERROR">Error in file 'D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite_Parallel2.robot': Setting variable '' failed: Invalid variable name ''.</msg>
 </errors>
 </robot>

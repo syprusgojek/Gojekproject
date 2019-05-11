@@ -49,8 +49,10 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     ${Amazon_Cart_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Close_Button_xpath
     ${Amazon_Macbook_Order_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Close_Button_xpath
     ${Amazon_Macbook_Order_Continue_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Continue_Button_xpath
+    ${Amazon_Macbook_Order_Iframe_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Iframe_xpath
+    ${Product_Name}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    test_data    Product_Name
     Wait Keyword    ${Amazon_Search_Text_Box_xpath}    Search Text Box
-    Input Text    ${Amazon_Search_Text_Box_xpath}    Macbook pro
+    Input Text    ${Amazon_Search_Text_Box_xpath}    ${Product_Name}
     Wait Keyword    ${Amazon_Search_Submit_Button_xpath}    Headphones
     Click Element    ${Amazon_Search_Submit_Button_xpath}
     Wait Keyword    ${Amazon_Search_Second_Product_xpath}    Macbook second product
@@ -63,6 +65,12 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     Comment    Run Keyword If    ${status}==True    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
     Comment    Wait Keyword    ${Amazon_Macbook_Order_Close_Button_xpath}    Macbook Close button
     Comment    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
+    Comment    Select Frame    xpath=//iframe[@id='DAsis']
+    Select Frame    ${Amazon_Macbook_Order_Iframe_xpath}
+    ${h}=    Get Window Titles
+    log    ${h}
+    ${e}=    Get Window Names
+    log    ${e}
     Wait Keyword    ${Amazon_Macbook_Order_Continue_Button_xpath}    Continue button
     Click Element    ${Amazon_Macbook_Order_Continue_Button_xpath}
     sleep    2s
@@ -72,7 +80,7 @@ TC_Remove_Earlier_Added_Headphones
     [Tags]    TC3    Sanity
     ${Amazon_Product_Cart_Link_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Cart_Link_xpath
     ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Headphones_Titles_Added_In_Cart_xpath
-    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Delete_Buttons_Added_In_Cart_xpath
+    ${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath
     Wait Keyword    ${Amazon_Product_Cart_Link_xpath}    Cart Icon
     Click Element    ${Amazon_Product_Cart_Link_xpath}
     Wait Keyword    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}    Product Titles
@@ -81,7 +89,7 @@ TC_Remove_Earlier_Added_Headphones
     ${product_titles}=    Evaluate    ${product_titles}+1
     :FOR    ${i}     IN RANGE    1    ${product_titles}
     \    ${delete_headphone}=    Set Variable    ${EMPTY}
-    \    ${delete_headphone}=    Catenate    SEPARATOR=    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}    [${i}]
+    \    ${delete_headphone}=    Catenate    SEPARATOR=    ${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath}    [${i}]
     \    Wait Keyword    ${delete_headphone}    Delete Headphone
     \    Click Element    ${delete_headphone}
 
@@ -92,6 +100,7 @@ TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
     ${Amazon_Product_Quantity_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Quantity_Drop_Down_xpath
     ${Amazon_Cart_Proceed_To_Checkout_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Proceed_To_Checkout_Button_xpath
     ${Amazon_Checkout_Shipping_Address_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Checkout_Shipping_Address_xpath
+    ${Amazon_Product_MacBook_Quantity_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_MacBook_Quantity_Drop_Down_xpath
     Wait Keyword    ${Amazon_Product_Cart_Link_xpath}    Cart Icon
     Click Element    ${Amazon_Product_Cart_Link_xpath}
     Wait Keyword    ${Amazon_Product_MacBook_Titles_Added_In_Cart_xpath}    Product Titles
@@ -100,7 +109,7 @@ TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
     ${product_titles}=    Evaluate    ${product_titles}+1
     :FOR    ${i}     IN RANGE    1    ${product_titles}
     \    ${change_quantity}=    Set Variable    ${EMPTY}
-    \    ${change_quantity}=    Catenate    SEPARATOR=    ${Amazon_Product_Quantity_Drop_Down_xpath}    [${i}]
+    \    ${change_quantity}=    Catenate    SEPARATOR=    ${Amazon_Product_MacBook_Quantity_Drop_Down_xpath}    [${i}]
     \    Wait Keyword    ${change_quantity}    Change Quantity Macbook pro
     \    Select From List By Value    ${change_quantity}    1
     Wait Keyword    ${Amazon_Cart_Proceed_To_Checkout_Button_xpath}    Proceed to checkout

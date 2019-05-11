@@ -26,6 +26,7 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     ${Amazon_Cart_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Close_Button_xpath
     ${Amazon_Macbook_Order_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Close_Button_xpath
     ${Amazon_Macbook_Order_Continue_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Continue_Button_xpath
+    ${Amazon_Macbook_Order_Iframe_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Iframe_xpath
     Wait Keyword    ${Amazon_Search_Text_Box_xpath}    Search Text Box
     Input Text    ${Amazon_Search_Text_Box_xpath}    Macbook pro
     Wait Keyword    ${Amazon_Search_Submit_Button_xpath}    Headphones
@@ -40,9 +41,11 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     Comment    Run Keyword If    ${status}==True    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
     Comment    Wait Keyword    ${Amazon_Macbook_Order_Close_Button_xpath}    Macbook Close button
     Comment    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
+    Select Frame    ${Amazon_Macbook_Order_Iframe_xpath}
     Wait Keyword    ${Amazon_Macbook_Order_Continue_Button_xpath}    Continue button
     Click Element    ${Amazon_Macbook_Order_Continue_Button_xpath}
     Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_Macbook_xpath}    Added to Cart Message
+
 
 TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
     [Tags]    TC2    Sanity
