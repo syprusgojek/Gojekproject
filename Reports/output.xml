@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190511 09:57:02.822" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
+<suite source="D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite.robot" id="s1" name="Amazon Gojek Master Suite">
+<kw type="setup" name="Open browser">
+<kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
+<arguments>
+<arg>${Urls_File_Path}</arg>
+<arg>Amazon_Url</arg>
+<arg>Home_Page_Url</arg>
+</arguments>
+<assign>
+<var>${websites homepage url}</var>
+</assign>
+<msg timestamp="20190511 09:57:03.070" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
+File exists
+workbook &lt;xlrd.book.Book object at 0x000000000631DB00&gt;
+value https://www.amazon.com</msg>
+<msg timestamp="20190511 09:57:03.070" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
+<status status="PASS" endtime="20190511 09:57:03.070" starttime="20190511 09:57:03.067"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="CustomSeleniumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.071" starttime="20190511 09:57:03.071"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="CustomSeleniumLibrary">
+<doc>Sets Selenium 2's default implicit wait in seconds and</doc>
+<arguments>
+<arg>5 Seconds</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.072" starttime="20190511 09:57:03.071"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${websites homepage url}</arg>
+</arguments>
+<msg timestamp="20190511 09:57:03.072" level="INFO">https://www.amazon.com</msg>
+<status status="PASS" endtime="20190511 09:57:03.072" starttime="20190511 09:57:03.072"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>credentials_enable_service</arg>
+</arguments>
+<assign>
+<var>${cred}</var>
+</assign>
+<msg timestamp="20190511 09:57:03.073" level="INFO">${cred} = credentials_enable_service</msg>
+<status status="PASS" endtime="20190511 09:57:03.073" starttime="20190511 09:57:03.072"></status>
+</kw>
+<kw name="Convert To Boolean" library="BuiltIn">
+<doc>Converts the given item to Boolean true or false.</doc>
+<arguments>
+<arg>False</arg>
+</arguments>
+<assign>
+<var>${val}</var>
+</assign>
+<msg timestamp="20190511 09:57:03.073" level="INFO">${val} = False</msg>
+<status status="PASS" endtime="20190511 09:57:03.073" starttime="20190511 09:57:03.073"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>${prefs}=</arg>
+<arg>Create Dictionary</arg>
+<arg>${geo}</arg>
+<arg>${val}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.074" starttime="20190511 09:57:03.074"></status>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${cred}</arg>
+<arg>${val}</arg>
+</arguments>
+<assign>
+<var>${prefs}</var>
+</assign>
+<msg timestamp="20190511 09:57:03.076" level="INFO">${prefs} = {u'credentials_enable_service': False}</msg>
+<status status="PASS" endtime="20190511 09:57:03.076" starttime="20190511 09:57:03.074"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+</arguments>
+<assign>
+<var>${chrome_options}</var>
+</assign>
+<msg timestamp="20190511 09:57:03.076" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000000000631DAC8&gt;</msg>
+<status status="PASS" endtime="20190511 09:57:03.076" starttime="20190511 09:57:03.076"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>allow-running-insecure-content</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.077" starttime="20190511 09:57:03.076"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>disable-web-notification-custom-layouts</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.077" starttime="20190511 09:57:03.077"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>disable-notifications</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.078" starttime="20190511 09:57:03.078"></status>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<arguments>
+<arg>${chrome_options}</arg>
+<arg>add_experimental_option</arg>
+<arg>prefs</arg>
+<arg>${prefs}</arg>
+</arguments>
+<status status="PASS" endtime="20190511 09:57:03.078" starttime="20190511 09:57:03.078"></status>
+</kw>
+<kw name="Create Webdriver" library="CustomSeleniumLibrary">
+<doc>Creates an instance of a WebDriver.</doc>
+<arguments>
+<arg>Chrome</arg>
+<arg>chrome_options=${chrome_options}</arg>
+<arg>executable_path=${chrome_exe_path}</arg>
+</arguments>
+<msg timestamp="20190511 09:57:03.079" level="INFO">Creating an instance of the Chrome WebDriver</msg>
+<status status="PASS" endtime="20190511 09:57:05.611" starttime="20190511 09:57:03.079"></status>
+</kw>
+<kw name="Go To" library="CustomSeleniumLibrary">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${websites homepage url}</arg>
+</arguments>
+<msg timestamp="20190511 09:57:05.612" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20190511 09:57:18.722" starttime="20190511 09:57:05.611"></status>
+</kw>
+<kw name="Get Window Size" library="CustomSeleniumLibrary">
+<doc>Returns current window size as `width` then `height`.</doc>
+<assign>
+<var>${w}</var>
+<var>${h}</var>
+</assign>
+<msg timestamp="20190511 09:57:19.746" level="INFO">${w} = 1051</msg>
+<msg timestamp="20190511 09:57:19.746" level="INFO">${h} = 806</msg>
+<status status="PASS" endtime="20190511 09:57:19.746" starttime="20190511 09:57:18.723"></status>
+</kw>
+<kw name="Get Window Size" library="CustomSeleniumLibrary">
+<doc>Returns current window size as `width` then `height`.</doc>
+<assign>
+<var>${a}</var>
+<var>${b}</var>
+</assign>
+<msg timestamp="20190511 09:57:19.750" level="INFO">${a} = 1051</msg>
+<msg timestamp="20190511 09:57:19.750" level="INFO">${b} = 806</msg>
+<status status="PASS" endtime="20190511 09:57:19.750" starttime="20190511 09:57:19.746"></status>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>1044</arg>
+</arguments>
+<assign>
+<var>${Width}</var>
+</assign>
+<msg timestamp="20190511 09:57:19.751" level="INFO">${Width} = 1044</msg>
+<status status="PASS" endtime="20190511 09:57:19.751" starttime="20190511 09:57:19.751"></status>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>788</arg>
+</arguments>
+<assign>
+<var>${Height}</var>
+</assign>
+<msg timestamp="20190511 09:57:19.752" level="INFO">${Height} = 788</msg>
+<status status="PASS" endtime="20190511 09:57:19.752" starttime="20190511 09:57:19.751"></status>
+</kw>
+<kw name="Get Webdriver Instance" library="CustomSeleniumLibrary">
+<assign>
+<var>${driverInstance}</var>
+</assign>
+<msg timestamp="20190511 09:57:19.752" level="INFO">${driverInstance} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="c46c3b8155227321b6ec6f229d0d3a0f")&gt;</msg>
+<status status="PASS" endtime="20190511 09:57:19.752" starttime="20190511 09:57:19.752"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${driver}</arg>
+<arg>${driverInstance}</arg>
+</arguments>
+<msg timestamp="20190511 09:57:19.753" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="c46c3b8155227321b6ec6f229d0d3a0f")&gt;</msg>
+<status status="PASS" endtime="20190511 09:57:19.753" starttime="20190511 09:57:19.752"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20190511 09:57:29.756" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20190511 09:57:29.756" starttime="20190511 09:57:19.753"></status>
+</kw>
+<kw name="Login">
+<msg timestamp="20190511 09:57:29.758" level="FAIL">User keyword 'Login' contains no keywords.</msg>
+<status status="FAIL" endtime="20190511 09:57:29.759" starttime="20190511 09:57:29.757"></status>
+</kw>
+<status status="FAIL" endtime="20190511 09:57:29.760" starttime="20190511 09:57:03.066"></status>
+</kw>
+<test id="s1-t1" name="TC_Select_Available_Headphone_And_Add_to_Cart">
+<tags>
+<tag>Sanity</tag>
+<tag>TC1</tag>
+</tags>
+<status status="FAIL" endtime="20190511 09:57:29.768" critical="yes" starttime="20190511 09:57:29.760">Parent suite setup failed:
+User keyword 'Login' contains no keywords.</status>
+</test>
+<kw type="teardown" name="Logout and Browser Close">
+<msg timestamp="20190511 09:57:29.777" level="FAIL">User keyword 'Logout and Browser Close' contains no keywords.</msg>
+<status status="FAIL" endtime="20190511 09:57:29.777" starttime="20190511 09:57:29.775">User keyword 'Logout and Browser Close' contains no keywords.</status>
+</kw>
+<status status="FAIL" endtime="20190511 09:57:29.778" starttime="20190511 09:57:02.826">Suite setup failed:
+User keyword 'Login' contains no keywords.
+
+Also suite teardown failed:
+User keyword 'Logout and Browser Close' contains no keywords.</status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Sanity</stat>
+<stat fail="1" pass="0">TC1</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Amazon Gojek Master Suite" pass="0">Amazon Gojek Master Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
