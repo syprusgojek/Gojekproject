@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20190512 10:52:19.070" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
+<robot generated="20190512 12:38:19.944" generator="Robot 3.0.4 (Python 2.7.9 on win32)">
 <suite source="D:\Amazon Automation\Go-Jek\Amazon auto suite\Amazon_Gojek_Master_Suite.robot" id="s1" name="Amazon Gojek Master Suite">
 <kw type="setup" name="Open browser">
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
@@ -11,12 +11,12 @@
 <assign>
 <var>${websites homepage url}</var>
 </assign>
-<msg timestamp="20190512 10:52:19.379" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
+<msg timestamp="20190512 12:38:23.137" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000062DACC0&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000063F7C50&gt;
 value https://www.amazon.com</msg>
-<msg timestamp="20190512 10:52:19.380" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
-<status status="PASS" endtime="20190512 10:52:19.380" starttime="20190512 10:52:19.376"></status>
+<msg timestamp="20190512 12:38:23.138" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
+<status status="PASS" endtime="20190512 12:38:23.138" starttime="20190512 12:38:23.134"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -27,34 +27,34 @@ value https://www.amazon.com</msg>
 <assign>
 <var>${Verify_Amazon_Home_Page_Logo_css}</var>
 </assign>
-<msg timestamp="20190512 10:52:19.390" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:23.142" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000062DAE48&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000063F7D68&gt;
 value css=div[id*='nav-logo']</msg>
-<msg timestamp="20190512 10:52:19.390" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
-<status status="PASS" endtime="20190512 10:52:19.390" starttime="20190512 10:52:19.380"></status>
+<msg timestamp="20190512 12:38:23.142" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
+<status status="PASS" endtime="20190512 12:38:23.142" starttime="20190512 12:38:23.138"></status>
 </kw>
 <kw name="Set Selenium Timeout" library="CustomSeleniumLibrary">
 <doc>Sets the timeout in seconds used by various keywords.</doc>
 <arguments>
 <arg>30</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.391" starttime="20190512 10:52:19.390"></status>
+<status status="PASS" endtime="20190512 12:38:23.142" starttime="20190512 12:38:23.142"></status>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="CustomSeleniumLibrary">
 <doc>Sets Selenium 2's default implicit wait in seconds and</doc>
 <arguments>
 <arg>5 Seconds</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.391" starttime="20190512 10:52:19.391"></status>
+<status status="PASS" endtime="20190512 12:38:23.142" starttime="20190512 12:38:23.142"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${websites homepage url}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:19.392" level="INFO">https://www.amazon.com</msg>
-<status status="PASS" endtime="20190512 10:52:19.392" starttime="20190512 10:52:19.391"></status>
+<msg timestamp="20190512 12:38:23.142" level="INFO">https://www.amazon.com</msg>
+<status status="PASS" endtime="20190512 12:38:23.142" starttime="20190512 12:38:23.142"></status>
 </kw>
 <kw name="Convert To String" library="BuiltIn">
 <doc>Converts the given item to a Unicode string.</doc>
@@ -64,8 +64,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${cred}</var>
 </assign>
-<msg timestamp="20190512 10:52:19.392" level="INFO">${cred} = credentials_enable_service</msg>
-<status status="PASS" endtime="20190512 10:52:19.392" starttime="20190512 10:52:19.392"></status>
+<msg timestamp="20190512 12:38:23.149" level="INFO">${cred} = credentials_enable_service</msg>
+<status status="PASS" endtime="20190512 12:38:23.149" starttime="20190512 12:38:23.142"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -75,8 +75,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${val}</var>
 </assign>
-<msg timestamp="20190512 10:52:19.392" level="INFO">${val} = False</msg>
-<status status="PASS" endtime="20190512 10:52:19.392" starttime="20190512 10:52:19.392"></status>
+<msg timestamp="20190512 12:38:23.150" level="INFO">${val} = False</msg>
+<status status="PASS" endtime="20190512 12:38:23.150" starttime="20190512 12:38:23.150"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -86,7 +86,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>${geo}</arg>
 <arg>${val}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.393" starttime="20190512 10:52:19.393"></status>
+<status status="PASS" endtime="20190512 12:38:23.151" starttime="20190512 12:38:23.150"></status>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
@@ -97,8 +97,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${prefs}</var>
 </assign>
-<msg timestamp="20190512 10:52:19.393" level="INFO">${prefs} = {u'credentials_enable_service': False}</msg>
-<status status="PASS" endtime="20190512 10:52:19.393" starttime="20190512 10:52:19.393"></status>
+<msg timestamp="20190512 12:38:23.154" level="INFO">${prefs} = {u'credentials_enable_service': False}</msg>
+<status status="PASS" endtime="20190512 12:38:23.154" starttime="20190512 12:38:23.151"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -109,8 +109,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${chrome_options}</var>
 </assign>
-<msg timestamp="20190512 10:52:19.394" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000000006329A90&gt;</msg>
-<status status="PASS" endtime="20190512 10:52:19.394" starttime="20190512 10:52:19.393"></status>
+<msg timestamp="20190512 12:38:23.155" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000000000642B978&gt;</msg>
+<status status="PASS" endtime="20190512 12:38:23.155" starttime="20190512 12:38:23.154"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -119,7 +119,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>add_argument</arg>
 <arg>allow-running-insecure-content</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.394" starttime="20190512 10:52:19.394"></status>
+<status status="PASS" endtime="20190512 12:38:23.155" starttime="20190512 12:38:23.155"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -128,7 +128,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>add_argument</arg>
 <arg>disable-web-notification-custom-layouts</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.394" starttime="20190512 10:52:19.394"></status>
+<status status="PASS" endtime="20190512 12:38:23.156" starttime="20190512 12:38:23.155"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -137,7 +137,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>add_argument</arg>
 <arg>disable-notifications</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.395" starttime="20190512 10:52:19.395"></status>
+<status status="PASS" endtime="20190512 12:38:23.156" starttime="20190512 12:38:23.156"></status>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <doc>Calls the named method of the given object with the provided arguments.</doc>
@@ -147,7 +147,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:19.395" starttime="20190512 10:52:19.395"></status>
+<status status="PASS" endtime="20190512 12:38:23.156" starttime="20190512 12:38:23.156"></status>
 </kw>
 <kw name="Create Webdriver" library="CustomSeleniumLibrary">
 <doc>Creates an instance of a WebDriver.</doc>
@@ -156,16 +156,16 @@ value css=div[id*='nav-logo']</msg>
 <arg>chrome_options=${chrome_options}</arg>
 <arg>executable_path=${chrome_exe_path}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:19.396" level="INFO">Creating an instance of the Chrome WebDriver</msg>
-<status status="PASS" endtime="20190512 10:52:22.152" starttime="20190512 10:52:19.395"></status>
+<msg timestamp="20190512 12:38:23.157" level="INFO">Creating an instance of the Chrome WebDriver</msg>
+<status status="PASS" endtime="20190512 12:38:27.705" starttime="20190512 12:38:23.156"></status>
 </kw>
 <kw name="Go To" library="CustomSeleniumLibrary">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>${websites homepage url}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:22.155" level="INFO">Opening url 'https://www.amazon.com'</msg>
-<status status="PASS" endtime="20190512 10:52:33.486" starttime="20190512 10:52:22.153"></status>
+<msg timestamp="20190512 12:38:27.705" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20190512 12:38:53.519" starttime="20190512 12:38:27.705"></status>
 </kw>
 <kw name="Get Window Size" library="CustomSeleniumLibrary">
 <doc>Returns current window size as `width` then `height`.</doc>
@@ -173,9 +173,9 @@ value css=div[id*='nav-logo']</msg>
 <var>${w}</var>
 <var>${h}</var>
 </assign>
-<msg timestamp="20190512 10:52:34.527" level="INFO">${w} = 1051</msg>
-<msg timestamp="20190512 10:52:34.527" level="INFO">${h} = 806</msg>
-<status status="PASS" endtime="20190512 10:52:34.527" starttime="20190512 10:52:33.486"></status>
+<msg timestamp="20190512 12:38:54.543" level="INFO">${w} = 1051</msg>
+<msg timestamp="20190512 12:38:54.543" level="INFO">${h} = 806</msg>
+<status status="PASS" endtime="20190512 12:38:54.544" starttime="20190512 12:38:53.519"></status>
 </kw>
 <kw name="Get Window Size" library="CustomSeleniumLibrary">
 <doc>Returns current window size as `width` then `height`.</doc>
@@ -183,9 +183,9 @@ value css=div[id*='nav-logo']</msg>
 <var>${a}</var>
 <var>${b}</var>
 </assign>
-<msg timestamp="20190512 10:52:34.535" level="INFO">${a} = 1051</msg>
-<msg timestamp="20190512 10:52:34.535" level="INFO">${b} = 806</msg>
-<status status="PASS" endtime="20190512 10:52:34.535" starttime="20190512 10:52:34.527"></status>
+<msg timestamp="20190512 12:38:54.549" level="INFO">${a} = 1051</msg>
+<msg timestamp="20190512 12:38:54.550" level="INFO">${b} = 806</msg>
+<status status="PASS" endtime="20190512 12:38:54.550" starttime="20190512 12:38:54.544"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -195,8 +195,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${Width}</var>
 </assign>
-<msg timestamp="20190512 10:52:34.536" level="INFO">${Width} = 1044</msg>
-<status status="PASS" endtime="20190512 10:52:34.537" starttime="20190512 10:52:34.535"></status>
+<msg timestamp="20190512 12:38:54.551" level="INFO">${Width} = 1044</msg>
+<status status="PASS" endtime="20190512 12:38:54.551" starttime="20190512 12:38:54.550"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -206,8 +206,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${Height}</var>
 </assign>
-<msg timestamp="20190512 10:52:34.538" level="INFO">${Height} = 788</msg>
-<status status="PASS" endtime="20190512 10:52:34.538" starttime="20190512 10:52:34.537"></status>
+<msg timestamp="20190512 12:38:54.552" level="INFO">${Height} = 788</msg>
+<status status="PASS" endtime="20190512 12:38:54.552" starttime="20190512 12:38:54.551"></status>
 </kw>
 <kw name="Set Window Size" library="CustomSeleniumLibrary">
 <doc>Sets the `width` and `height` of the current window to the specified values.</doc>
@@ -215,14 +215,14 @@ value css=div[id*='nav-logo']</msg>
 <arg>${Width}</arg>
 <arg>${Height}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:34.795" starttime="20190512 10:52:34.538"></status>
+<status status="PASS" endtime="20190512 12:38:54.762" starttime="20190512 12:38:54.552"></status>
 </kw>
 <kw name="Get Webdriver Instance" library="CustomSeleniumLibrary">
 <assign>
 <var>${driverInstance}</var>
 </assign>
-<msg timestamp="20190512 10:52:34.796" level="INFO">${driverInstance} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="53c978cfb85d936a243721bdcedf5b7a")&gt;</msg>
-<status status="PASS" endtime="20190512 10:52:34.796" starttime="20190512 10:52:34.795"></status>
+<msg timestamp="20190512 12:38:54.762" level="INFO">${driverInstance} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="5870c9ac1b87018728c35154912f8edf")&gt;</msg>
+<status status="PASS" endtime="20190512 12:38:54.762" starttime="20190512 12:38:54.762"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -230,12 +230,12 @@ value css=div[id*='nav-logo']</msg>
 <arg>${driver}</arg>
 <arg>${driverInstance}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:34.796" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="53c978cfb85d936a243721bdcedf5b7a")&gt;</msg>
-<status status="PASS" endtime="20190512 10:52:34.796" starttime="20190512 10:52:34.796"></status>
+<msg timestamp="20190512 12:38:54.763" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="5870c9ac1b87018728c35154912f8edf")&gt;</msg>
+<status status="PASS" endtime="20190512 12:38:54.763" starttime="20190512 12:38:54.763"></status>
 </kw>
 <kw name="Maximize Browser Window" library="CustomSeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20190512 10:52:37.150" starttime="20190512 10:52:34.796"></status>
+<status status="PASS" endtime="20190512 12:38:58.082" starttime="20190512 12:38:54.763"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -257,8 +257,8 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.150" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:37.150" starttime="20190512 10:52:37.150"></status>
+<msg timestamp="20190512 12:38:58.084" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:38:58.084" starttime="20190512 12:38:58.084"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -267,7 +267,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:37.351" starttime="20190512 10:52:37.150"></status>
+<status status="PASS" endtime="20190512 12:38:58.244" starttime="20190512 12:38:58.085"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -276,7 +276,7 @@ value css=div[id*='nav-logo']</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:37.487" starttime="20190512 10:52:37.351"></status>
+<status status="PASS" endtime="20190512 12:38:58.291" starttime="20190512 12:38:58.244"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -285,11 +285,11 @@ value css=div[id*='nav-logo']</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:37.526" starttime="20190512 10:52:37.487"></status>
+<status status="PASS" endtime="20190512 12:38:58.323" starttime="20190512 12:38:58.291"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:37.526" starttime="20190512 10:52:37.150"></status>
+<status status="PASS" endtime="20190512 12:38:58.323" starttime="20190512 12:38:58.083"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:37.526" starttime="20190512 10:52:37.150"></status>
+<status status="PASS" endtime="20190512 12:38:58.323" starttime="20190512 12:38:58.082"></status>
 </kw>
 <kw name="Login">
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
@@ -301,12 +301,12 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${Verify_Amazon_Home_Page_Logo_css}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.533" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:58.329" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006348DD8&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000644AE10&gt;
 value css=div[id*='nav-logo']</msg>
-<msg timestamp="20190512 10:52:37.534" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
-<status status="PASS" endtime="20190512 10:52:37.534" starttime="20190512 10:52:37.526"></status>
+<msg timestamp="20190512 12:38:58.329" level="INFO">${Verify_Amazon_Home_Page_Logo_css} = css=div[id*='nav-logo']</msg>
+<status status="PASS" endtime="20190512 12:38:58.329" starttime="20190512 12:38:58.324"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -317,12 +317,12 @@ value css=div[id*='nav-logo']</msg>
 <assign>
 <var>${Amazon_Home_Page_Sign_In_Text_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.541" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:58.333" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063E8668&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2828&gt;
 value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
-<msg timestamp="20190512 10:52:37.541" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
-<status status="PASS" endtime="20190512 10:52:37.541" starttime="20190512 10:52:37.534"></status>
+<msg timestamp="20190512 12:38:58.334" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
+<status status="PASS" endtime="20190512 12:38:58.334" starttime="20190512 12:38:58.329"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -333,12 +333,12 @@ value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
 <assign>
 <var>${Amazon_Sign_In_Email_id_css}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.552" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:58.339" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063E8C88&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2C50&gt;
 value css=input[id*='email']</msg>
-<msg timestamp="20190512 10:52:37.553" level="INFO">${Amazon_Sign_In_Email_id_css} = css=input[id*='email']</msg>
-<status status="PASS" endtime="20190512 10:52:37.553" starttime="20190512 10:52:37.545"></status>
+<msg timestamp="20190512 12:38:58.339" level="INFO">${Amazon_Sign_In_Email_id_css} = css=input[id*='email']</msg>
+<status status="PASS" endtime="20190512 12:38:58.339" starttime="20190512 12:38:58.334"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -349,12 +349,12 @@ value css=input[id*='email']</msg>
 <assign>
 <var>${Amazon_Sign_In_Password_css}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.561" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:58.343" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063E8390&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2240&gt;
 value css=input[id*='password']</msg>
-<msg timestamp="20190512 10:52:37.561" level="INFO">${Amazon_Sign_In_Password_css} = css=input[id*='password']</msg>
-<status status="PASS" endtime="20190512 10:52:37.561" starttime="20190512 10:52:37.554"></status>
+<msg timestamp="20190512 12:38:58.344" level="INFO">${Amazon_Sign_In_Password_css} = css=input[id*='password']</msg>
+<status status="PASS" endtime="20190512 12:38:58.344" starttime="20190512 12:38:58.339"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -365,12 +365,12 @@ value css=input[id*='password']</msg>
 <assign>
 <var>${Amazon_Sign_In_Button_css}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.567" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:58.348" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063E8DA0&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2908&gt;
 value css=input[id*='Submit']</msg>
-<msg timestamp="20190512 10:52:37.567" level="INFO">${Amazon_Sign_In_Button_css} = css=input[id*='Submit']</msg>
-<status status="PASS" endtime="20190512 10:52:37.567" starttime="20190512 10:52:37.561"></status>
+<msg timestamp="20190512 12:38:58.348" level="INFO">${Amazon_Sign_In_Button_css} = css=input[id*='Submit']</msg>
+<status status="PASS" endtime="20190512 12:38:58.348" starttime="20190512 12:38:58.344"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -381,12 +381,12 @@ value css=input[id*='Submit']</msg>
 <assign>
 <var>${Verify_Amazon_Sign_In_Text_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.577" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:38:58.355" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006329748&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000063F7CC0&gt;
 value xpath=//h1[contains(text(),'Sign in')]</msg>
-<msg timestamp="20190512 10:52:37.577" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
-<status status="PASS" endtime="20190512 10:52:37.577" starttime="20190512 10:52:37.567"></status>
+<msg timestamp="20190512 12:38:58.355" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
+<status status="PASS" endtime="20190512 12:38:58.355" starttime="20190512 12:38:58.349"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -397,12 +397,12 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <assign>
 <var>${username}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.580" level="INFO">datafile D:\Amazon Automation\Go-Jek\Credentials\Amazon_Credentials.xlsx
+<msg timestamp="20190512 12:38:58.472" level="INFO">datafile D:\Amazon Automation\Go-Jek\Credentials\Amazon_Credentials.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EAB70&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000063F7A58&gt;
 value syprusgojek@gmail.com</msg>
-<msg timestamp="20190512 10:52:37.581" level="INFO">${username} = syprusgojek@gmail.com</msg>
-<status status="PASS" endtime="20190512 10:52:37.581" starttime="20190512 10:52:37.577"></status>
+<msg timestamp="20190512 12:38:58.473" level="INFO">${username} = syprusgojek@gmail.com</msg>
+<status status="PASS" endtime="20190512 12:38:58.473" starttime="20190512 12:38:58.355"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -413,12 +413,12 @@ value syprusgojek@gmail.com</msg>
 <assign>
 <var>${password}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.584" level="INFO">datafile D:\Amazon Automation\Go-Jek\Credentials\Amazon_Credentials.xlsx
+<msg timestamp="20190512 12:38:58.476" level="INFO">datafile D:\Amazon Automation\Go-Jek\Credentials\Amazon_Credentials.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EAC18&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000063F7908&gt;
 value RoBotFra@432</msg>
-<msg timestamp="20190512 10:52:37.584" level="INFO">${password} = RoBotFra@432</msg>
-<status status="PASS" endtime="20190512 10:52:37.584" starttime="20190512 10:52:37.581"></status>
+<msg timestamp="20190512 12:38:58.476" level="INFO">${password} = RoBotFra@432</msg>
+<status status="PASS" endtime="20190512 12:38:58.476" starttime="20190512 12:38:58.473"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -433,8 +433,8 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:37.586" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:37.586" starttime="20190512 10:52:37.585"></status>
+<msg timestamp="20190512 12:38:58.477" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:38:58.477" starttime="20190512 12:38:58.477"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -443,7 +443,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:37.754" starttime="20190512 10:52:37.586"></status>
+<status status="PASS" endtime="20190512 12:38:58.568" starttime="20190512 12:38:58.477"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -452,7 +452,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:37.813" starttime="20190512 10:52:37.754"></status>
+<status status="PASS" endtime="20190512 12:38:58.601" starttime="20190512 12:38:58.568"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -461,17 +461,17 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:37.862" starttime="20190512 10:52:37.813"></status>
+<status status="PASS" endtime="20190512 12:38:58.631" starttime="20190512 12:38:58.601"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:37.862" starttime="20190512 10:52:37.584"></status>
+<status status="PASS" endtime="20190512 12:38:58.631" starttime="20190512 12:38:58.476"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Home_Page_Sign_In_Text_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:37.863" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Hello, Sign in')]/..)'.</msg>
-<status status="PASS" endtime="20190512 10:52:40.593" starttime="20190512 10:52:37.862"></status>
+<msg timestamp="20190512 12:38:58.632" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Hello, Sign in')]/..)'.</msg>
+<status status="PASS" endtime="20190512 12:39:03.754" starttime="20190512 12:38:58.631"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -486,8 +486,8 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:40.596" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:40.596" starttime="20190512 10:52:40.593"></status>
+<msg timestamp="20190512 12:39:03.754" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:03.754" starttime="20190512 12:39:03.754"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -496,7 +496,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:40.742" starttime="20190512 10:52:40.597"></status>
+<status status="PASS" endtime="20190512 12:39:03.883" starttime="20190512 12:39:03.755"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -505,7 +505,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:40.814" starttime="20190512 10:52:40.743"></status>
+<status status="PASS" endtime="20190512 12:39:03.913" starttime="20190512 12:39:03.883"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -514,9 +514,9 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:40.858" starttime="20190512 10:52:40.814"></status>
+<status status="PASS" endtime="20190512 12:39:03.934" starttime="20190512 12:39:03.913"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:40.858" starttime="20190512 10:52:40.593"></status>
+<status status="PASS" endtime="20190512 12:39:03.934" starttime="20190512 12:39:03.754"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -531,8 +531,8 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:40.859" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:40.859" starttime="20190512 10:52:40.858"></status>
+<msg timestamp="20190512 12:39:03.935" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:03.935" starttime="20190512 12:39:03.935"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -541,7 +541,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:41.000" starttime="20190512 10:52:40.859"></status>
+<status status="PASS" endtime="20190512 12:39:04.045" starttime="20190512 12:39:03.936"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -550,7 +550,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:41.063" starttime="20190512 10:52:41.005"></status>
+<status status="PASS" endtime="20190512 12:39:04.078" starttime="20190512 12:39:04.045"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -559,9 +559,9 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:41.139" starttime="20190512 10:52:41.063"></status>
+<status status="PASS" endtime="20190512 12:39:04.103" starttime="20190512 12:39:04.078"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:41.139" starttime="20190512 10:52:40.858"></status>
+<status status="PASS" endtime="20190512 12:39:04.103" starttime="20190512 12:39:03.935"></status>
 </kw>
 <kw name="Input Text Custom" library="Amazon_Python_Utility">
 <arguments>
@@ -569,8 +569,8 @@ value RoBotFra@432</msg>
 <arg>${Amazon_Sign_In_Email_id_css}</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:41.916" level="INFO">CSS is inputed</msg>
-<status status="PASS" endtime="20190512 10:52:41.916" starttime="20190512 10:52:41.139"></status>
+<msg timestamp="20190512 12:39:04.568" level="INFO">CSS is inputed</msg>
+<status status="PASS" endtime="20190512 12:39:04.568" starttime="20190512 12:39:04.103"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -585,8 +585,8 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:41.920" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:41.920" starttime="20190512 10:52:41.916"></status>
+<msg timestamp="20190512 12:39:04.570" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:04.570" starttime="20190512 12:39:04.570"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -595,7 +595,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:42.065" starttime="20190512 10:52:41.920"></status>
+<status status="PASS" endtime="20190512 12:39:04.656" starttime="20190512 12:39:04.571"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -604,7 +604,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:42.114" starttime="20190512 10:52:42.065"></status>
+<status status="PASS" endtime="20190512 12:39:04.682" starttime="20190512 12:39:04.656"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -613,9 +613,9 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:42.167" starttime="20190512 10:52:42.114"></status>
+<status status="PASS" endtime="20190512 12:39:04.700" starttime="20190512 12:39:04.682"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:42.167" starttime="20190512 10:52:41.916"></status>
+<status status="PASS" endtime="20190512 12:39:04.700" starttime="20190512 12:39:04.569"></status>
 </kw>
 <kw name="Input Text Custom" library="Amazon_Python_Utility">
 <arguments>
@@ -623,8 +623,8 @@ value RoBotFra@432</msg>
 <arg>${Amazon_Sign_In_Password_css}</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:42.991" level="INFO">CSS is inputed</msg>
-<status status="PASS" endtime="20190512 10:52:42.992" starttime="20190512 10:52:42.167"></status>
+<msg timestamp="20190512 12:39:05.130" level="INFO">CSS is inputed</msg>
+<status status="PASS" endtime="20190512 12:39:05.130" starttime="20190512 12:39:04.700"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -639,8 +639,8 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:42.994" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:42.994" starttime="20190512 10:52:42.993"></status>
+<msg timestamp="20190512 12:39:05.132" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:05.132" starttime="20190512 12:39:05.131"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -649,7 +649,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:43.136" starttime="20190512 10:52:42.994"></status>
+<status status="PASS" endtime="20190512 12:39:05.375" starttime="20190512 12:39:05.132"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -658,7 +658,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:43.181" starttime="20190512 10:52:43.136"></status>
+<status status="PASS" endtime="20190512 12:39:05.411" starttime="20190512 12:39:05.375"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -667,17 +667,17 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:43.216" starttime="20190512 10:52:43.181"></status>
+<status status="PASS" endtime="20190512 12:39:05.435" starttime="20190512 12:39:05.412"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:43.216" starttime="20190512 10:52:42.992"></status>
+<status status="PASS" endtime="20190512 12:39:05.436" starttime="20190512 12:39:05.130"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Sign_In_Button_css}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:43.221" level="INFO">Clicking element 'css=input[id*='Submit']'.</msg>
-<status status="PASS" endtime="20190512 10:52:47.363" starttime="20190512 10:52:43.221"></status>
+<msg timestamp="20190512 12:39:05.436" level="INFO">Clicking element 'css=input[id*='Submit']'.</msg>
+<status status="PASS" endtime="20190512 12:39:10.744" starttime="20190512 12:39:05.436"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -692,8 +692,8 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.366" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:47.366" starttime="20190512 10:52:47.365"></status>
+<msg timestamp="20190512 12:39:10.746" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:10.746" starttime="20190512 12:39:10.745"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -702,7 +702,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:47.415" starttime="20190512 10:52:47.366"></status>
+<status status="PASS" endtime="20190512 12:39:10.771" starttime="20190512 12:39:10.746"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -711,7 +711,7 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:47.446" starttime="20190512 10:52:47.416"></status>
+<status status="PASS" endtime="20190512 12:39:10.798" starttime="20190512 12:39:10.771"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -720,21 +720,21 @@ value RoBotFra@432</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:47.469" starttime="20190512 10:52:47.446"></status>
+<status status="PASS" endtime="20190512 12:39:10.813" starttime="20190512 12:39:10.798"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:47.469" starttime="20190512 10:52:47.363"></status>
+<status status="PASS" endtime="20190512 12:39:10.814" starttime="20190512 12:39:10.744"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:47.470" starttime="20190512 10:52:37.526"></status>
+<status status="PASS" endtime="20190512 12:39:10.814" starttime="20190512 12:38:58.323"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:47.470" starttime="20190512 10:52:19.376"></status>
+<status status="PASS" endtime="20190512 12:39:10.814" starttime="20190512 12:38:23.134"></status>
 </kw>
 <test id="s1-t1" name="TC_Select_Available_Headphone_And_Add_to_Cart">
 <kw type="setup" name="Refresh the page">
 <kw name="Reload Page" library="CustomSeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" endtime="20190512 10:52:47.622" starttime="20190512 10:52:47.472"></status>
+<status status="PASS" endtime="20190512 12:39:10.907" starttime="20190512 12:39:10.815"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:47.622" starttime="20190512 10:52:47.471"></status>
+<status status="PASS" endtime="20190512 12:39:10.908" starttime="20190512 12:39:10.815"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -745,12 +745,12 @@ value RoBotFra@432</msg>
 <assign>
 <var>${Amazon_Departments_Drop_Down_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.645" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.914" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640C0F0&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006508080&gt;
 value xpath=(//span[contains(text(),'Departments')])</msg>
-<msg timestamp="20190512 10:52:47.646" level="INFO">${Amazon_Departments_Drop_Down_xpath} = xpath=(//span[contains(text(),'Departments')])</msg>
-<status status="PASS" endtime="20190512 10:52:47.646" starttime="20190512 10:52:47.634"></status>
+<msg timestamp="20190512 12:39:10.914" level="INFO">${Amazon_Departments_Drop_Down_xpath} = xpath=(//span[contains(text(),'Departments')])</msg>
+<status status="PASS" endtime="20190512 12:39:10.914" starttime="20190512 12:39:10.908"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -761,12 +761,12 @@ value xpath=(//span[contains(text(),'Departments')])</msg>
 <assign>
 <var>${Amazon_Electronics_Drop_Down_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.660" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.920" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640CF60&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006508860&gt;
 value xpath=(//span[contains(text(),'Electronics')])</msg>
-<msg timestamp="20190512 10:52:47.660" level="INFO">${Amazon_Electronics_Drop_Down_xpath} = xpath=(//span[contains(text(),'Electronics')])</msg>
-<status status="PASS" endtime="20190512 10:52:47.661" starttime="20190512 10:52:47.649"></status>
+<msg timestamp="20190512 12:39:10.920" level="INFO">${Amazon_Electronics_Drop_Down_xpath} = xpath=(//span[contains(text(),'Electronics')])</msg>
+<status status="PASS" endtime="20190512 12:39:10.920" starttime="20190512 12:39:10.915"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -777,12 +777,12 @@ value xpath=(//span[contains(text(),'Electronics')])</msg>
 <assign>
 <var>${Amazon_Headphones_Drop_Down_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.670" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.925" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640C978&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006508CF8&gt;
 value xpath=(//span[contains(text(),'Headphones')])</msg>
-<msg timestamp="20190512 10:52:47.671" level="INFO">${Amazon_Headphones_Drop_Down_xpath} = xpath=(//span[contains(text(),'Headphones')])</msg>
-<status status="PASS" endtime="20190512 10:52:47.671" starttime="20190512 10:52:47.661"></status>
+<msg timestamp="20190512 12:39:10.925" level="INFO">${Amazon_Headphones_Drop_Down_xpath} = xpath=(//span[contains(text(),'Headphones')])</msg>
+<status status="PASS" endtime="20190512 12:39:10.926" starttime="20190512 12:39:10.921"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -793,12 +793,12 @@ value xpath=(//span[contains(text(),'Headphones')])</msg>
 <assign>
 <var>${Amazon_Headphones_First_Product_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.683" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.930" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640C550&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000065080F0&gt;
 value xpath=(//a[contains(@class,'a-link-normal')]//img)[1]</msg>
-<msg timestamp="20190512 10:52:47.683" level="INFO">${Amazon_Headphones_First_Product_xpath} = xpath=(//a[contains(@class,'a-link-normal')]//img)[1]</msg>
-<status status="PASS" endtime="20190512 10:52:47.683" starttime="20190512 10:52:47.672"></status>
+<msg timestamp="20190512 12:39:10.930" level="INFO">${Amazon_Headphones_First_Product_xpath} = xpath=(//a[contains(@class,'a-link-normal')]//img)[1]</msg>
+<status status="PASS" endtime="20190512 12:39:10.930" starttime="20190512 12:39:10.926"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -809,12 +809,12 @@ value xpath=(//a[contains(@class,'a-link-normal')]//img)[1]</msg>
 <assign>
 <var>${Amazon_Add_To_Cart_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.693" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.938" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640C160&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006508D68&gt;
 value xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
-<msg timestamp="20190512 10:52:47.693" level="INFO">${Amazon_Add_To_Cart_Button_xpath} = xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
-<status status="PASS" endtime="20190512 10:52:47.693" starttime="20190512 10:52:47.684"></status>
+<msg timestamp="20190512 12:39:10.938" level="INFO">${Amazon_Add_To_Cart_Button_xpath} = xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
+<status status="PASS" endtime="20190512 12:39:10.938" starttime="20190512 12:39:10.931"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -825,12 +825,12 @@ value xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
 <assign>
 <var>${Amazon_Cart_Close_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.706" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.943" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640CBE0&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006508C18&gt;
 value xpath=(//a[contains(@class,'close-button')])</msg>
-<msg timestamp="20190512 10:52:47.707" level="INFO">${Amazon_Cart_Close_Button_xpath} = xpath=(//a[contains(@class,'close-button')])</msg>
-<status status="PASS" endtime="20190512 10:52:47.707" starttime="20190512 10:52:47.695"></status>
+<msg timestamp="20190512 12:39:10.943" level="INFO">${Amazon_Cart_Close_Button_xpath} = xpath=(//a[contains(@class,'close-button')])</msg>
+<status status="PASS" endtime="20190512 12:39:10.943" starttime="20190512 12:39:10.938"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -841,12 +841,12 @@ value xpath=(//a[contains(@class,'close-button')])</msg>
 <assign>
 <var>${Verify_Amazon_Added_To_Cart_Text_Message_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.711" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:39:10.948" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640B860&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000650AEB8&gt;
 value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
-<msg timestamp="20190512 10:52:47.715" level="INFO">${Verify_Amazon_Added_To_Cart_Text_Message_xpath} = xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
-<status status="PASS" endtime="20190512 10:52:47.715" starttime="20190512 10:52:47.707"></status>
+<msg timestamp="20190512 12:39:10.948" level="INFO">${Verify_Amazon_Added_To_Cart_Text_Message_xpath} = xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
+<status status="PASS" endtime="20190512 12:39:10.948" starttime="20190512 12:39:10.944"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -861,8 +861,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:47.718" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:47.718" starttime="20190512 10:52:47.718"></status>
+<msg timestamp="20190512 12:39:10.951" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:10.951" starttime="20190512 12:39:10.950"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -871,7 +871,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:50.189" starttime="20190512 10:52:47.718"></status>
+<status status="PASS" endtime="20190512 12:39:15.063" starttime="20190512 12:39:10.951"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -880,7 +880,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:50.231" starttime="20190512 10:52:50.189"></status>
+<status status="PASS" endtime="20190512 12:39:15.100" starttime="20190512 12:39:15.063"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -889,17 +889,17 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:50.263" starttime="20190512 10:52:50.231"></status>
+<status status="PASS" endtime="20190512 12:39:15.128" starttime="20190512 12:39:15.100"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:50.263" starttime="20190512 10:52:47.717"></status>
+<status status="PASS" endtime="20190512 12:39:15.129" starttime="20190512 12:39:10.949"></status>
 </kw>
 <kw name="Mouse Over" library="CustomSeleniumLibrary">
 <doc>Simulates hovering mouse over the element specified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Departments_Drop_Down_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:50.264" level="INFO">Simulating Mouse Over on element 'xpath=(//span[contains(text(),'Departments')])'</msg>
-<status status="PASS" endtime="20190512 10:52:52.133" starttime="20190512 10:52:50.264"></status>
+<msg timestamp="20190512 12:39:15.130" level="INFO">Simulating Mouse Over on element 'xpath=(//span[contains(text(),'Departments')])'</msg>
+<status status="PASS" endtime="20190512 12:39:18.561" starttime="20190512 12:39:15.130"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -914,8 +914,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:52:52.135" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:52:52.135" starttime="20190512 10:52:52.135"></status>
+<msg timestamp="20190512 12:39:18.564" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:18.565" starttime="20190512 12:39:18.564"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -924,7 +924,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:52.285" starttime="20190512 10:52:52.136"></status>
+<status status="PASS" endtime="20190512 12:39:18.658" starttime="20190512 12:39:18.565"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -933,7 +933,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:52.347" starttime="20190512 10:52:52.285"></status>
+<status status="PASS" endtime="20190512 12:39:18.687" starttime="20190512 12:39:18.658"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -942,17 +942,17 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:52:52.369" starttime="20190512 10:52:52.347"></status>
+<status status="PASS" endtime="20190512 12:39:18.706" starttime="20190512 12:39:18.687"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:52:52.369" starttime="20190512 10:52:52.135"></status>
+<status status="PASS" endtime="20190512 12:39:18.707" starttime="20190512 12:39:18.563"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Electronics_Drop_Down_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:52:52.370" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Electronics')])'.</msg>
-<status status="PASS" endtime="20190512 10:53:11.477" starttime="20190512 10:52:52.370"></status>
+<msg timestamp="20190512 12:39:18.707" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Electronics')])'.</msg>
+<status status="PASS" endtime="20190512 12:39:36.900" starttime="20190512 12:39:18.707"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -967,8 +967,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:53:11.481" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:53:11.482" starttime="20190512 10:53:11.481"></status>
+<msg timestamp="20190512 12:39:36.902" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:36.902" starttime="20190512 12:39:36.902"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -977,7 +977,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:53:11.722" starttime="20190512 10:53:11.482"></status>
+<status status="PASS" endtime="20190512 12:39:37.041" starttime="20190512 12:39:36.903"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -986,7 +986,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:53:11.770" starttime="20190512 10:53:11.726"></status>
+<status status="PASS" endtime="20190512 12:39:37.069" starttime="20190512 12:39:37.041"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -995,17 +995,17 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:53:11.810" starttime="20190512 10:53:11.771"></status>
+<status status="PASS" endtime="20190512 12:39:37.089" starttime="20190512 12:39:37.069"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:53:11.810" starttime="20190512 10:53:11.479"></status>
+<status status="PASS" endtime="20190512 12:39:37.090" starttime="20190512 12:39:36.901"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Headphones_Drop_Down_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:53:11.811" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Headphones')])'.</msg>
-<status status="PASS" endtime="20190512 10:53:39.117" starttime="20190512 10:53:11.811"></status>
+<msg timestamp="20190512 12:39:37.090" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Headphones')])'.</msg>
+<status status="PASS" endtime="20190512 12:39:47.177" starttime="20190512 12:39:37.090"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1020,8 +1020,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:53:39.122" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:53:39.122" starttime="20190512 10:53:39.122"></status>
+<msg timestamp="20190512 12:39:47.179" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:39:47.179" starttime="20190512 12:39:47.179"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1030,7 +1030,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:53:39.322" starttime="20190512 10:53:39.122"></status>
+<status status="PASS" endtime="20190512 12:39:47.274" starttime="20190512 12:39:47.180"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1039,7 +1039,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:53:39.376" starttime="20190512 10:53:39.323"></status>
+<status status="PASS" endtime="20190512 12:39:47.305" starttime="20190512 12:39:47.274"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1048,17 +1048,17 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:53:46.854" starttime="20190512 10:53:39.376"></status>
+<status status="PASS" endtime="20190512 12:39:47.366" starttime="20190512 12:39:47.305"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:53:46.854" starttime="20190512 10:53:39.119"></status>
+<status status="PASS" endtime="20190512 12:39:47.366" starttime="20190512 12:39:47.178"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Headphones_First_Product_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:53:46.854" level="INFO">Clicking element 'xpath=(//a[contains(@class,'a-link-normal')]//img)[1]'.</msg>
-<status status="PASS" endtime="20190512 10:54:23.038" starttime="20190512 10:53:46.854"></status>
+<msg timestamp="20190512 12:39:47.367" level="INFO">Clicking element 'xpath=(//a[contains(@class,'a-link-normal')]//img)[1]'.</msg>
+<status status="PASS" endtime="20190512 12:40:17.602" starttime="20190512 12:39:47.367"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1073,8 +1073,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:54:23.040" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:54:23.040" starttime="20190512 10:54:23.040"></status>
+<msg timestamp="20190512 12:40:17.604" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:40:17.604" starttime="20190512 12:40:17.603"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1083,7 +1083,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:23.218" starttime="20190512 10:54:23.042"></status>
+<status status="PASS" endtime="20190512 12:40:17.714" starttime="20190512 12:40:17.604"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1092,7 +1092,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:23.273" starttime="20190512 10:54:23.218"></status>
+<status status="PASS" endtime="20190512 12:40:17.748" starttime="20190512 12:40:17.715"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1101,17 +1101,17 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:23.298" starttime="20190512 10:54:23.274"></status>
+<status status="PASS" endtime="20190512 12:40:17.783" starttime="20190512 12:40:17.748"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:54:23.298" starttime="20190512 10:54:23.039"></status>
+<status status="PASS" endtime="20190512 12:40:17.783" starttime="20190512 12:40:17.603"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Add_To_Cart_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:54:23.299" level="INFO">Clicking element 'xpath=(//input[contains(@id,'add-to-cart-button')])[1]'.</msg>
-<status status="PASS" endtime="20190512 10:54:39.159" starttime="20190512 10:54:23.298"></status>
+<msg timestamp="20190512 12:40:17.785" level="INFO">Clicking element 'xpath=(//input[contains(@id,'add-to-cart-button')])[1]'.</msg>
+<status status="PASS" endtime="20190512 12:40:35.358" starttime="20190512 12:40:17.784"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1126,8 +1126,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:54:39.160" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:54:39.161" starttime="20190512 10:54:39.160"></status>
+<msg timestamp="20190512 12:40:35.359" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:40:35.359" starttime="20190512 12:40:35.359"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1136,7 +1136,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:45.505" starttime="20190512 10:54:39.161"></status>
+<status status="PASS" endtime="20190512 12:40:43.200" starttime="20190512 12:40:35.359"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1145,7 +1145,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:48.377" starttime="20190512 10:54:45.506"></status>
+<status status="PASS" endtime="20190512 12:40:45.734" starttime="20190512 12:40:43.201"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1154,9 +1154,9 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:48.416" starttime="20190512 10:54:48.377"></status>
+<status status="PASS" endtime="20190512 12:40:45.773" starttime="20190512 12:40:45.734"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:54:48.416" starttime="20190512 10:54:39.159"></status>
+<status status="PASS" endtime="20190512 12:40:45.774" starttime="20190512 12:40:35.358"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1171,8 +1171,8 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:54:48.419" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:54:48.419" starttime="20190512 10:54:48.418"></status>
+<msg timestamp="20190512 12:40:45.775" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:40:45.775" starttime="20190512 12:40:45.775"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1181,7 +1181,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:48.545" starttime="20190512 10:54:48.419"></status>
+<status status="PASS" endtime="20190512 12:40:45.892" starttime="20190512 12:40:45.775"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1190,7 +1190,7 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:48.587" starttime="20190512 10:54:48.545"></status>
+<status status="PASS" endtime="20190512 12:40:45.937" starttime="20190512 12:40:45.893"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1199,31 +1199,31 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:54:48.618" starttime="20190512 10:54:48.588"></status>
+<status status="PASS" endtime="20190512 12:40:45.963" starttime="20190512 12:40:45.937"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:54:48.618" starttime="20190512 10:54:48.417"></status>
+<status status="PASS" endtime="20190512 12:40:45.963" starttime="20190512 12:40:45.774"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Cart_Close_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:54:48.618" level="INFO">Clicking element 'xpath=(//a[contains(@class,'close-button')])'.</msg>
-<status status="PASS" endtime="20190512 10:54:48.917" starttime="20190512 10:54:48.618"></status>
+<msg timestamp="20190512 12:40:45.963" level="INFO">Clicking element 'xpath=(//a[contains(@class,'close-button')])'.</msg>
+<status status="PASS" endtime="20190512 12:40:46.224" starttime="20190512 12:40:45.963"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC1</tag>
 </tags>
-<status status="PASS" endtime="20190512 10:54:48.918" critical="yes" starttime="20190512 10:52:47.470"></status>
+<status status="PASS" endtime="20190512 12:40:46.231" critical="yes" starttime="20190512 12:39:10.814"></status>
 </test>
 <test id="s1-t2" name="TC_Search_MacBookPro_Add_Second_Product_To_Cart">
 <kw type="setup" name="Refresh the page">
 <kw name="Reload Page" library="CustomSeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" endtime="20190512 10:54:48.971" starttime="20190512 10:54:48.926"></status>
+<status status="PASS" endtime="20190512 12:40:46.294" starttime="20190512 12:40:46.236"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:54:48.971" starttime="20190512 10:54:48.925"></status>
+<status status="PASS" endtime="20190512 12:40:46.294" starttime="20190512 12:40:46.236"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1234,12 +1234,12 @@ value xpath=(//h4[contains(text(),'Added to Cart')])[2]</msg>
 <assign>
 <var>${Amazon_Search_Text_Box_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:48.994" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.304" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EA550&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A8320&gt;
 value xpath=(//input[contains(@id,'searchtextbox')])</msg>
-<msg timestamp="20190512 10:54:48.994" level="INFO">${Amazon_Search_Text_Box_xpath} = xpath=(//input[contains(@id,'searchtextbox')])</msg>
-<status status="PASS" endtime="20190512 10:54:48.994" starttime="20190512 10:54:48.983"></status>
+<msg timestamp="20190512 12:40:46.304" level="INFO">${Amazon_Search_Text_Box_xpath} = xpath=(//input[contains(@id,'searchtextbox')])</msg>
+<status status="PASS" endtime="20190512 12:40:46.304" starttime="20190512 12:40:46.297"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1250,12 +1250,12 @@ value xpath=(//input[contains(@id,'searchtextbox')])</msg>
 <assign>
 <var>${Amazon_Search_Submit_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.003" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.315" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EA7B8&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A8390&gt;
 value xpath=(//input[contains(@type,'submit')])[1]</msg>
-<msg timestamp="20190512 10:54:49.003" level="INFO">${Amazon_Search_Submit_Button_xpath} = xpath=(//input[contains(@type,'submit')])[1]</msg>
-<status status="PASS" endtime="20190512 10:54:49.003" starttime="20190512 10:54:48.996"></status>
+<msg timestamp="20190512 12:40:46.315" level="INFO">${Amazon_Search_Submit_Button_xpath} = xpath=(//input[contains(@type,'submit')])[1]</msg>
+<status status="PASS" endtime="20190512 12:40:46.316" starttime="20190512 12:40:46.305"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1266,12 +1266,12 @@ value xpath=(//input[contains(@type,'submit')])[1]</msg>
 <assign>
 <var>${Amazon_Search_Second_Product_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.016" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.325" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EA6A0&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000065087F0&gt;
 value xpath=(//div[contains(@data-cel-widget,'search_result_3')]//span[contains(text(),'MacBook')])</msg>
-<msg timestamp="20190512 10:54:49.016" level="INFO">${Amazon_Search_Second_Product_xpath} = xpath=(//div[contains(@data-cel-widget,'search_result_3')]//span[contains(text(),'MacBook')])</msg>
-<status status="PASS" endtime="20190512 10:54:49.016" starttime="20190512 10:54:49.003"></status>
+<msg timestamp="20190512 12:40:46.325" level="INFO">${Amazon_Search_Second_Product_xpath} = xpath=(//div[contains(@data-cel-widget,'search_result_3')]//span[contains(text(),'MacBook')])</msg>
+<status status="PASS" endtime="20190512 12:40:46.325" starttime="20190512 12:40:46.316"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1282,12 +1282,12 @@ value xpath=(//div[contains(@data-cel-widget,'search_result_3')]//span[contains(
 <assign>
 <var>${Amazon_Product_Quantity_Drop_Down_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.022" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.338" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006337240&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2CC0&gt;
 value xpath=(//select[contains(@name,'quantity')])</msg>
-<msg timestamp="20190512 10:54:49.022" level="INFO">${Amazon_Product_Quantity_Drop_Down_xpath} = xpath=(//select[contains(@name,'quantity')])</msg>
-<status status="PASS" endtime="20190512 10:54:49.022" starttime="20190512 10:54:49.016"></status>
+<msg timestamp="20190512 12:40:46.338" level="INFO">${Amazon_Product_Quantity_Drop_Down_xpath} = xpath=(//select[contains(@name,'quantity')])</msg>
+<status status="PASS" endtime="20190512 12:40:46.338" starttime="20190512 12:40:46.327"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1298,12 +1298,12 @@ value xpath=(//select[contains(@name,'quantity')])</msg>
 <assign>
 <var>${Amazon_Product_Quantity_2_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.031" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.351" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006348E10&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2860&gt;
 value xpath=//a[@id='quantity_1']</msg>
-<msg timestamp="20190512 10:54:49.031" level="INFO">${Amazon_Product_Quantity_2_xpath} = xpath=//a[@id='quantity_1']</msg>
-<status status="PASS" endtime="20190512 10:54:49.031" starttime="20190512 10:54:49.026"></status>
+<msg timestamp="20190512 12:40:46.351" level="INFO">${Amazon_Product_Quantity_2_xpath} = xpath=//a[@id='quantity_1']</msg>
+<status status="PASS" endtime="20190512 12:40:46.351" starttime="20190512 12:40:46.339"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1314,12 +1314,12 @@ value xpath=//a[@id='quantity_1']</msg>
 <assign>
 <var>${Verify_Amazon_Added_To_Cart_Text_Message_Macbook_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.067" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.364" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006348BA8&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2EB8&gt;
 value xpath=(//h1[contains(text(),'Added to Cart')])</msg>
-<msg timestamp="20190512 10:54:49.068" level="INFO">${Verify_Amazon_Added_To_Cart_Text_Message_Macbook_xpath} = xpath=(//h1[contains(text(),'Added to Cart')])</msg>
-<status status="PASS" endtime="20190512 10:54:49.068" starttime="20190512 10:54:49.055"></status>
+<msg timestamp="20190512 12:40:46.364" level="INFO">${Verify_Amazon_Added_To_Cart_Text_Message_Macbook_xpath} = xpath=(//h1[contains(text(),'Added to Cart')])</msg>
+<status status="PASS" endtime="20190512 12:40:46.364" starttime="20190512 12:40:46.352"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1330,12 +1330,12 @@ value xpath=(//h1[contains(text(),'Added to Cart')])</msg>
 <assign>
 <var>${Amazon_Add_To_Cart_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.080" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.376" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006348B70&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006508080&gt;
 value xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
-<msg timestamp="20190512 10:54:49.081" level="INFO">${Amazon_Add_To_Cart_Button_xpath} = xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
-<status status="PASS" endtime="20190512 10:54:49.081" starttime="20190512 10:54:49.070"></status>
+<msg timestamp="20190512 12:40:46.378" level="INFO">${Amazon_Add_To_Cart_Button_xpath} = xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
+<status status="PASS" endtime="20190512 12:40:46.378" starttime="20190512 12:40:46.367"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1346,12 +1346,12 @@ value xpath=(//input[contains(@id,'add-to-cart-button')])[1]</msg>
 <assign>
 <var>${Amazon_Cart_Close_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.088" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.389" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640C128&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000065034E0&gt;
 value xpath=(//a[contains(@class,'close-button')])</msg>
-<msg timestamp="20190512 10:54:49.089" level="INFO">${Amazon_Cart_Close_Button_xpath} = xpath=(//a[contains(@class,'close-button')])</msg>
-<status status="PASS" endtime="20190512 10:54:49.089" starttime="20190512 10:54:49.081"></status>
+<msg timestamp="20190512 12:40:46.389" level="INFO">${Amazon_Cart_Close_Button_xpath} = xpath=(//a[contains(@class,'close-button')])</msg>
+<status status="PASS" endtime="20190512 12:40:46.389" starttime="20190512 12:40:46.379"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1362,12 +1362,12 @@ value xpath=(//a[contains(@class,'close-button')])</msg>
 <assign>
 <var>${Amazon_Macbook_Order_Close_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.099" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.404" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640D630&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000642B128&gt;
 value xpath=(//button[contains(@class,'button-close')]/i)</msg>
-<msg timestamp="20190512 10:54:49.099" level="INFO">${Amazon_Macbook_Order_Close_Button_xpath} = xpath=(//button[contains(@class,'button-close')]/i)</msg>
-<status status="PASS" endtime="20190512 10:54:49.099" starttime="20190512 10:54:49.089"></status>
+<msg timestamp="20190512 12:40:46.405" level="INFO">${Amazon_Macbook_Order_Close_Button_xpath} = xpath=(//button[contains(@class,'button-close')]/i)</msg>
+<status status="PASS" endtime="20190512 12:40:46.405" starttime="20190512 12:40:46.392"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1378,12 +1378,12 @@ value xpath=(//button[contains(@class,'button-close')]/i)</msg>
 <assign>
 <var>${Amazon_Macbook_Order_Continue_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.105" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.420" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640DBA8&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000642BAC8&gt;
 value xpath=//span[contains(text(),'Continue')]/..//input[contains(@class,'a-button-input')]</msg>
-<msg timestamp="20190512 10:54:49.105" level="INFO">${Amazon_Macbook_Order_Continue_Button_xpath} = xpath=//span[contains(text(),'Continue')]/..//input[contains(@class,'a-button-input')]</msg>
-<status status="PASS" endtime="20190512 10:54:49.105" starttime="20190512 10:54:49.100"></status>
+<msg timestamp="20190512 12:40:46.421" level="INFO">${Amazon_Macbook_Order_Continue_Button_xpath} = xpath=//span[contains(text(),'Continue')]/..//input[contains(@class,'a-button-input')]</msg>
+<status status="PASS" endtime="20190512 12:40:46.421" starttime="20190512 12:40:46.405"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1394,12 +1394,12 @@ value xpath=//span[contains(text(),'Continue')]/..//input[contains(@class,'a-but
 <assign>
 <var>${Amazon_Macbook_Order_Iframe_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.122" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.440" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640C278&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000642B438&gt;
 value xpath=//iframe[@id='DAsis']</msg>
-<msg timestamp="20190512 10:54:49.122" level="INFO">${Amazon_Macbook_Order_Iframe_xpath} = xpath=//iframe[@id='DAsis']</msg>
-<status status="PASS" endtime="20190512 10:54:49.122" starttime="20190512 10:54:49.106"></status>
+<msg timestamp="20190512 12:40:46.440" level="INFO">${Amazon_Macbook_Order_Iframe_xpath} = xpath=//iframe[@id='DAsis']</msg>
+<status status="PASS" endtime="20190512 12:40:46.440" starttime="20190512 12:40:46.421"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1410,12 +1410,12 @@ value xpath=//iframe[@id='DAsis']</msg>
 <assign>
 <var>${Product_Name}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.131" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:40:46.464" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640CF98&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000642B160&gt;
 value MacBook Pro</msg>
-<msg timestamp="20190512 10:54:49.131" level="INFO">${Product_Name} = MacBook Pro</msg>
-<status status="PASS" endtime="20190512 10:54:49.131" starttime="20190512 10:54:49.122"></status>
+<msg timestamp="20190512 12:40:46.465" level="INFO">${Product_Name} = MacBook Pro</msg>
+<status status="PASS" endtime="20190512 12:40:46.465" starttime="20190512 12:40:46.446"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1430,8 +1430,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:54:49.133" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:54:49.133" starttime="20190512 10:54:49.132"></status>
+<msg timestamp="20190512 12:40:46.467" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:40:46.467" starttime="20190512 12:40:46.466"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1440,7 +1440,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:55:16.305" starttime="20190512 10:54:49.133"></status>
+<status status="PASS" endtime="20190512 12:40:52.725" starttime="20190512 12:40:46.467"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1449,7 +1449,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:55:16.366" starttime="20190512 10:55:16.306"></status>
+<status status="PASS" endtime="20190512 12:40:52.776" starttime="20190512 12:40:52.726"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1458,9 +1458,9 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:55:16.422" starttime="20190512 10:55:16.366"></status>
+<status status="PASS" endtime="20190512 12:40:52.821" starttime="20190512 12:40:52.777"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:55:16.423" starttime="20190512 10:54:49.132"></status>
+<status status="PASS" endtime="20190512 12:40:52.821" starttime="20190512 12:40:46.465"></status>
 </kw>
 <kw name="Input Text" library="CustomSeleniumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1468,8 +1468,8 @@ value MacBook Pro</msg>
 <arg>${Amazon_Search_Text_Box_xpath}</arg>
 <arg>${Product_Name}</arg>
 </arguments>
-<msg timestamp="20190512 10:55:16.423" level="INFO">Typing text 'MacBook Pro' into text field 'xpath=(//input[contains(@id,'searchtextbox')])'</msg>
-<status status="PASS" endtime="20190512 10:55:19.336" starttime="20190512 10:55:16.423"></status>
+<msg timestamp="20190512 12:40:52.822" level="INFO">Typing text 'MacBook Pro' into text field 'xpath=(//input[contains(@id,'searchtextbox')])'</msg>
+<status status="PASS" endtime="20190512 12:40:59.036" starttime="20190512 12:40:52.821"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1484,8 +1484,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:55:19.337" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:55:19.337" starttime="20190512 10:55:19.337"></status>
+<msg timestamp="20190512 12:40:59.040" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:40:59.040" starttime="20190512 12:40:59.039"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1494,7 +1494,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:55:19.464" starttime="20190512 10:55:19.337"></status>
+<status status="PASS" endtime="20190512 12:40:59.154" starttime="20190512 12:40:59.040"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1503,7 +1503,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:55:19.520" starttime="20190512 10:55:19.464"></status>
+<status status="PASS" endtime="20190512 12:40:59.185" starttime="20190512 12:40:59.155"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1512,17 +1512,17 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:55:19.556" starttime="20190512 10:55:19.520"></status>
+<status status="PASS" endtime="20190512 12:40:59.206" starttime="20190512 12:40:59.185"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:55:19.556" starttime="20190512 10:55:19.336"></status>
+<status status="PASS" endtime="20190512 12:40:59.206" starttime="20190512 12:40:59.037"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Search_Submit_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:55:19.557" level="INFO">Clicking element 'xpath=(//input[contains(@type,'submit')])[1]'.</msg>
-<status status="PASS" endtime="20190512 10:56:00.000" starttime="20190512 10:55:19.557"></status>
+<msg timestamp="20190512 12:40:59.207" level="INFO">Clicking element 'xpath=(//input[contains(@type,'submit')])[1]'.</msg>
+<status status="PASS" endtime="20190512 12:41:10.778" starttime="20190512 12:40:59.206"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1537,8 +1537,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:56:00.005" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:56:00.005" starttime="20190512 10:56:00.004"></status>
+<msg timestamp="20190512 12:41:10.780" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:41:10.780" starttime="20190512 12:41:10.780"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1547,7 +1547,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:00.174" starttime="20190512 10:56:00.006"></status>
+<status status="PASS" endtime="20190512 12:41:10.878" starttime="20190512 12:41:10.780"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1556,7 +1556,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:00.213" starttime="20190512 10:56:00.174"></status>
+<status status="PASS" endtime="20190512 12:41:10.914" starttime="20190512 12:41:10.878"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1565,17 +1565,17 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:00.238" starttime="20190512 10:56:00.213"></status>
+<status status="PASS" endtime="20190512 12:41:10.950" starttime="20190512 12:41:10.914"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:56:00.238" starttime="20190512 10:56:00.002"></status>
+<status status="PASS" endtime="20190512 12:41:10.950" starttime="20190512 12:41:10.779"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Search_Second_Product_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:56:00.239" level="INFO">Clicking element 'xpath=(//div[contains(@data-cel-widget,'search_result_3')]//span[contains(text(),'MacBook')])'.</msg>
-<status status="PASS" endtime="20190512 10:56:41.296" starttime="20190512 10:56:00.239"></status>
+<msg timestamp="20190512 12:41:10.953" level="INFO">Clicking element 'xpath=(//div[contains(@data-cel-widget,'search_result_3')]//span[contains(text(),'MacBook')])'.</msg>
+<status status="PASS" endtime="20190512 12:41:42.602" starttime="20190512 12:41:10.952"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1590,8 +1590,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:56:41.297" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:56:41.297" starttime="20190512 10:56:41.297"></status>
+<msg timestamp="20190512 12:41:42.604" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:41:42.604" starttime="20190512 12:41:42.603"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1600,7 +1600,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:41.428" starttime="20190512 10:56:41.298"></status>
+<status status="PASS" endtime="20190512 12:41:42.701" starttime="20190512 12:41:42.604"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1609,7 +1609,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:41.475" starttime="20190512 10:56:41.428"></status>
+<status status="PASS" endtime="20190512 12:41:42.746" starttime="20190512 12:41:42.701"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1618,9 +1618,9 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:41.506" starttime="20190512 10:56:41.475"></status>
+<status status="PASS" endtime="20190512 12:41:42.789" starttime="20190512 12:41:42.747"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:56:41.506" starttime="20190512 10:56:41.296"></status>
+<status status="PASS" endtime="20190512 12:41:42.789" starttime="20190512 12:41:42.602"></status>
 </kw>
 <kw name="Select From List By Value" library="CustomSeleniumLibrary">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -1628,8 +1628,8 @@ value MacBook Pro</msg>
 <arg>${Amazon_Product_Quantity_Drop_Down_xpath}</arg>
 <arg>2</arg>
 </arguments>
-<msg timestamp="20190512 10:56:41.507" level="INFO">Selecting value(s) '2' from list 'xpath=(//select[contains(@name,'quantity')])'.</msg>
-<status status="PASS" endtime="20190512 10:56:42.251" starttime="20190512 10:56:41.507"></status>
+<msg timestamp="20190512 12:41:42.791" level="INFO">Selecting value(s) '2' from list 'xpath=(//select[contains(@name,'quantity')])'.</msg>
+<status status="PASS" endtime="20190512 12:41:43.620" starttime="20190512 12:41:42.791"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1644,8 +1644,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:56:42.254" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:56:42.254" starttime="20190512 10:56:42.253"></status>
+<msg timestamp="20190512 12:41:43.623" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:41:43.623" starttime="20190512 12:41:43.622"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1654,7 +1654,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.292" starttime="20190512 10:56:42.254"></status>
+<status status="PASS" endtime="20190512 12:41:43.664" starttime="20190512 12:41:43.623"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1663,7 +1663,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.352" starttime="20190512 10:56:42.292"></status>
+<status status="PASS" endtime="20190512 12:41:43.749" starttime="20190512 12:41:43.665"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1672,17 +1672,17 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.409" starttime="20190512 10:56:42.353"></status>
+<status status="PASS" endtime="20190512 12:41:43.770" starttime="20190512 12:41:43.749"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:56:42.409" starttime="20190512 10:56:42.252"></status>
+<status status="PASS" endtime="20190512 12:41:43.771" starttime="20190512 12:41:43.621"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Add_To_Cart_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:56:42.410" level="INFO">Clicking element 'xpath=(//input[contains(@id,'add-to-cart-button')])[1]'.</msg>
-<status status="PASS" endtime="20190512 10:56:42.729" starttime="20190512 10:56:42.410"></status>
+<msg timestamp="20190512 12:41:43.771" level="INFO">Clicking element 'xpath=(//input[contains(@id,'add-to-cart-button')])[1]'.</msg>
+<status status="PASS" endtime="20190512 12:41:44.006" starttime="20190512 12:41:43.771"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -1692,7 +1692,7 @@ value MacBook Pro</msg>
 <arg>Wait Until Page Contains Element</arg>
 <arg>${Amazon_Macbook_Order_Close_Button_xpath}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.732" starttime="20190512 10:56:42.732"></status>
+<status status="PASS" endtime="20190512 12:41:44.008" starttime="20190512 12:41:44.008"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -1702,7 +1702,7 @@ value MacBook Pro</msg>
 <arg>Click Element</arg>
 <arg>${Amazon_Macbook_Order_Close_Button_xpath}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.733" starttime="20190512 10:56:42.733"></status>
+<status status="PASS" endtime="20190512 12:41:44.011" starttime="20190512 12:41:44.010"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -1711,7 +1711,7 @@ value MacBook Pro</msg>
 <arg>${Amazon_Macbook_Order_Close_Button_xpath}</arg>
 <arg>Macbook Close button</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.734" starttime="20190512 10:56:42.733"></status>
+<status status="PASS" endtime="20190512 12:41:44.012" starttime="20190512 12:41:44.012"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -1719,7 +1719,7 @@ value MacBook Pro</msg>
 <arg>Click Element</arg>
 <arg>${Amazon_Macbook_Order_Close_Button_xpath}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.735" starttime="20190512 10:56:42.734"></status>
+<status status="PASS" endtime="20190512 12:41:44.013" starttime="20190512 12:41:44.013"></status>
 </kw>
 <kw name="Comment" library="BuiltIn">
 <doc>Displays the given messages in the log file as keyword arguments.</doc>
@@ -1727,51 +1727,51 @@ value MacBook Pro</msg>
 <arg>Select Frame</arg>
 <arg>xpath=//iframe[@id='DAsis']</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:42.736" starttime="20190512 10:56:42.736"></status>
+<status status="PASS" endtime="20190512 12:41:44.015" starttime="20190512 12:41:44.014"></status>
 </kw>
 <kw name="Select Frame" library="CustomSeleniumLibrary">
 <doc>Sets frame identified by `locator` as current frame.</doc>
 <arguments>
 <arg>${Amazon_Macbook_Order_Iframe_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:56:42.737" level="INFO">Selecting frame 'xpath=//iframe[@id='DAsis']'.</msg>
-<status status="PASS" endtime="20190512 10:56:43.022" starttime="20190512 10:56:42.736"></status>
+<msg timestamp="20190512 12:41:44.016" level="INFO">Selecting frame 'xpath=//iframe[@id='DAsis']'.</msg>
+<status status="PASS" endtime="20190512 12:41:44.260" starttime="20190512 12:41:44.015"></status>
 </kw>
 <kw name="Get Window Titles" library="CustomSeleniumLibrary">
 <doc>Returns and logs titles of all windows known to the browser.</doc>
 <assign>
 <var>${Window_titles}</var>
 </assign>
-<msg timestamp="20190512 10:56:44.352" level="INFO">Altogether 1 item.
+<msg timestamp="20190512 12:41:45.402" level="INFO">Altogether 1 item.
 1: Amazon.com: Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest Model): Gateway</msg>
-<msg timestamp="20190512 10:56:44.353" level="INFO">${Window_titles} = [u'Amazon.com: Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest Model): Gateway']</msg>
-<status status="PASS" endtime="20190512 10:56:44.353" starttime="20190512 10:56:43.023"></status>
+<msg timestamp="20190512 12:41:45.402" level="INFO">${Window_titles} = [u'Amazon.com: Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest Model): Gateway']</msg>
+<status status="PASS" endtime="20190512 12:41:45.402" starttime="20190512 12:41:44.263"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${Window_titles}</arg>
 </arguments>
-<msg timestamp="20190512 10:56:44.353" level="INFO">[u'Amazon.com: Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest Model): Gateway']</msg>
-<status status="PASS" endtime="20190512 10:56:44.353" starttime="20190512 10:56:44.353"></status>
+<msg timestamp="20190512 12:41:45.403" level="INFO">[u'Amazon.com: Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest Model): Gateway']</msg>
+<status status="PASS" endtime="20190512 12:41:45.403" starttime="20190512 12:41:45.403"></status>
 </kw>
 <kw name="Get Window Names" library="CustomSeleniumLibrary">
 <doc>Returns and logs names of all windows known to the browser.</doc>
 <assign>
 <var>${Window_Names}</var>
 </assign>
-<msg timestamp="20190512 10:56:46.092" level="INFO">Altogether 1 item.
+<msg timestamp="20190512 12:41:46.853" level="INFO">Altogether 1 item.
 1: https://images-na.ssl-images-amazon.com/images/I/41YNcL3lZpL._RC%7C51giv2WPknL.css,01evdoiemkL.css,01K+Ps1DeEL.css,31bAdTWQ3tL.css,01tgK36lpGL.css,11UGC+GXOPL.css,21LK7jaicML.css,11L58Qpo0GL.css,21EuGTxgpoL.css,01Xl9KigtzL.css,01YhS3Cs-hL.css,21GwE3cR-yL.css,019SHZnt8RL.css,01wAWQRgXzL.css,21bWcRJYNIL.css,11WgRxUdJRL.css,01dU8+SPlFL.css,11ocrgKoE-L.css,01SHjPML6tL.css,111-D2qRjiL.css,01QrWuRrZ-L.css,310Imb6LqFL.css,11Z1a0FxSIL.css,01cbS3UK11L.css,21mOLw+nYYL.css,01L8Y-JFEhL.css_.css?AUIClients/AmazonUI#us.not-trident</msg>
-<msg timestamp="20190512 10:56:46.092" level="INFO">${Window_Names} = [u'https://images-na.ssl-images-amazon.com/images/I/41YNcL3lZpL._RC%7C51giv2WPknL.css,01evdoiemkL.css,01K+Ps1DeEL.css,31bAdTWQ3tL.css,01tgK36lpGL.css,11UGC+GXOPL.css,21LK7jaicML.css,11L58Qpo0GL.css,21...</msg>
-<status status="PASS" endtime="20190512 10:56:46.092" starttime="20190512 10:56:44.353"></status>
+<msg timestamp="20190512 12:41:46.853" level="INFO">${Window_Names} = [u'https://images-na.ssl-images-amazon.com/images/I/41YNcL3lZpL._RC%7C51giv2WPknL.css,01evdoiemkL.css,01K+Ps1DeEL.css,31bAdTWQ3tL.css,01tgK36lpGL.css,11UGC+GXOPL.css,21LK7jaicML.css,11L58Qpo0GL.css,21...</msg>
+<status status="PASS" endtime="20190512 12:41:46.853" starttime="20190512 12:41:45.404"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${Window_Names}</arg>
 </arguments>
-<msg timestamp="20190512 10:56:46.093" level="INFO">[u'https://images-na.ssl-images-amazon.com/images/I/41YNcL3lZpL._RC%7C51giv2WPknL.css,01evdoiemkL.css,01K+Ps1DeEL.css,31bAdTWQ3tL.css,01tgK36lpGL.css,11UGC+GXOPL.css,21LK7jaicML.css,11L58Qpo0GL.css,21EuGTxgpoL.css,01Xl9KigtzL.css,01YhS3Cs-hL.css,21GwE3cR-yL.css,019SHZnt8RL.css,01wAWQRgXzL.css,21bWcRJYNIL.css,11WgRxUdJRL.css,01dU8+SPlFL.css,11ocrgKoE-L.css,01SHjPML6tL.css,111-D2qRjiL.css,01QrWuRrZ-L.css,310Imb6LqFL.css,11Z1a0FxSIL.css,01cbS3UK11L.css,21mOLw+nYYL.css,01L8Y-JFEhL.css_.css?AUIClients/AmazonUI#us.not-trident']</msg>
-<status status="PASS" endtime="20190512 10:56:46.094" starttime="20190512 10:56:46.093"></status>
+<msg timestamp="20190512 12:41:46.855" level="INFO">[u'https://images-na.ssl-images-amazon.com/images/I/41YNcL3lZpL._RC%7C51giv2WPknL.css,01evdoiemkL.css,01K+Ps1DeEL.css,31bAdTWQ3tL.css,01tgK36lpGL.css,11UGC+GXOPL.css,21LK7jaicML.css,11L58Qpo0GL.css,21EuGTxgpoL.css,01Xl9KigtzL.css,01YhS3Cs-hL.css,21GwE3cR-yL.css,019SHZnt8RL.css,01wAWQRgXzL.css,21bWcRJYNIL.css,11WgRxUdJRL.css,01dU8+SPlFL.css,11ocrgKoE-L.css,01SHjPML6tL.css,111-D2qRjiL.css,01QrWuRrZ-L.css,310Imb6LqFL.css,11Z1a0FxSIL.css,01cbS3UK11L.css,21mOLw+nYYL.css,01L8Y-JFEhL.css_.css?AUIClients/AmazonUI#us.not-trident']</msg>
+<status status="PASS" endtime="20190512 12:41:46.855" starttime="20190512 12:41:46.854"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1786,8 +1786,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:56:46.095" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:56:46.095" starttime="20190512 10:56:46.095"></status>
+<msg timestamp="20190512 12:41:46.856" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:41:46.856" starttime="20190512 12:41:46.856"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1796,7 +1796,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:46.486" starttime="20190512 10:56:46.095"></status>
+<status status="PASS" endtime="20190512 12:41:47.197" starttime="20190512 12:41:46.856"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1805,7 +1805,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:46.593" starttime="20190512 10:56:46.486"></status>
+<status status="PASS" endtime="20190512 12:41:47.314" starttime="20190512 12:41:47.197"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1814,25 +1814,25 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:46.620" starttime="20190512 10:56:46.594"></status>
+<status status="PASS" endtime="20190512 12:41:47.338" starttime="20190512 12:41:47.315"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:56:46.621" starttime="20190512 10:56:46.095"></status>
+<status status="PASS" endtime="20190512 12:41:47.339" starttime="20190512 12:41:46.855"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Macbook_Order_Continue_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:56:46.621" level="INFO">Clicking element 'xpath=//span[contains(text(),'Continue')]/..//input[contains(@class,'a-button-input')]'.</msg>
-<status status="PASS" endtime="20190512 10:56:55.809" starttime="20190512 10:56:46.621"></status>
+<msg timestamp="20190512 12:41:47.340" level="INFO">Clicking element 'xpath=//span[contains(text(),'Continue')]/..//input[contains(@class,'a-button-input')]'.</msg>
+<status status="PASS" endtime="20190512 12:41:56.136" starttime="20190512 12:41:47.339"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20190512 10:56:57.812" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20190512 10:56:57.812" starttime="20190512 10:56:55.809"></status>
+<msg timestamp="20190512 12:41:58.137" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190512 12:41:58.137" starttime="20190512 12:41:56.137"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1847,8 +1847,8 @@ value MacBook Pro</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:56:57.814" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:56:57.814" starttime="20190512 10:56:57.814"></status>
+<msg timestamp="20190512 12:41:58.141" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:41:58.142" starttime="20190512 12:41:58.141"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1857,7 +1857,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:58.010" starttime="20190512 10:56:57.815"></status>
+<status status="PASS" endtime="20190512 12:41:58.258" starttime="20190512 12:41:58.142"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1866,7 +1866,7 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:58.060" starttime="20190512 10:56:58.010"></status>
+<status status="PASS" endtime="20190512 12:41:58.285" starttime="20190512 12:41:58.258"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1875,23 +1875,23 @@ value MacBook Pro</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:56:58.146" starttime="20190512 10:56:58.060"></status>
+<status status="PASS" endtime="20190512 12:41:58.305" starttime="20190512 12:41:58.285"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:56:58.146" starttime="20190512 10:56:57.813"></status>
+<status status="PASS" endtime="20190512 12:41:58.305" starttime="20190512 12:41:58.139"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC2</tag>
 </tags>
-<status status="PASS" endtime="20190512 10:56:58.146" critical="yes" starttime="20190512 10:54:48.922"></status>
+<status status="PASS" endtime="20190512 12:41:58.306" critical="yes" starttime="20190512 12:40:46.234"></status>
 </test>
 <test id="s1-t3" name="TC_Remove_Earlier_Added_Headphones">
 <kw type="setup" name="Refresh the page">
 <kw name="Reload Page" library="CustomSeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" endtime="20190512 10:56:58.188" starttime="20190512 10:56:58.154"></status>
+<status status="PASS" endtime="20190512 12:41:58.331" starttime="20190512 12:41:58.310"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:56:58.188" starttime="20190512 10:56:58.154"></status>
+<status status="PASS" endtime="20190512 12:41:58.331" starttime="20190512 12:41:58.310"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1902,12 +1902,12 @@ value MacBook Pro</msg>
 <assign>
 <var>${Amazon_Product_Cart_Link_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:56:58.199" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:41:58.338" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EA5C0&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000643EBE0&gt;
 value xpath=(//a[contains(@id,'nav-cart')])</msg>
-<msg timestamp="20190512 10:56:58.199" level="INFO">${Amazon_Product_Cart_Link_xpath} = xpath=(//a[contains(@id,'nav-cart')])</msg>
-<status status="PASS" endtime="20190512 10:56:58.199" starttime="20190512 10:56:58.189"></status>
+<msg timestamp="20190512 12:41:58.338" level="INFO">${Amazon_Product_Cart_Link_xpath} = xpath=(//a[contains(@id,'nav-cart')])</msg>
+<status status="PASS" endtime="20190512 12:41:58.338" starttime="20190512 12:41:58.332"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1918,12 +1918,12 @@ value xpath=(//a[contains(@id,'nav-cart')])</msg>
 <assign>
 <var>${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:56:58.217" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:41:58.346" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EAEB8&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000643E940&gt;
 value xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
-<msg timestamp="20190512 10:56:58.218" level="INFO">${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath} = xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
-<status status="PASS" endtime="20190512 10:56:58.218" starttime="20190512 10:56:58.200"></status>
+<msg timestamp="20190512 12:41:58.346" level="INFO">${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath} = xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
+<status status="PASS" endtime="20190512 12:41:58.346" starttime="20190512 12:41:58.339"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -1934,12 +1934,12 @@ value xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'Headph
 <assign>
 <var>${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:56:58.232" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:41:58.351" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EA9E8&gt;
+workbook &lt;xlrd.book.Book object at 0x000000000643EEB8&gt;
 value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])</msg>
-<msg timestamp="20190512 10:56:58.232" level="INFO">${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])</msg>
-<status status="PASS" endtime="20190512 10:56:58.233" starttime="20190512 10:56:58.220"></status>
+<msg timestamp="20190512 12:41:58.351" level="INFO">${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])</msg>
+<status status="PASS" endtime="20190512 12:41:58.351" starttime="20190512 12:41:58.347"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -1954,8 +1954,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:56:58.235" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:56:58.235" starttime="20190512 10:56:58.234"></status>
+<msg timestamp="20190512 12:41:58.353" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:41:58.353" starttime="20190512 12:41:58.352"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -1964,7 +1964,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:03.590" starttime="20190512 10:56:58.235"></status>
+<status status="PASS" endtime="20190512 12:42:04.511" starttime="20190512 12:41:58.353"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1973,7 +1973,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:03.645" starttime="20190512 10:57:03.590"></status>
+<status status="PASS" endtime="20190512 12:42:04.567" starttime="20190512 12:42:04.511"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -1982,17 +1982,17 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:03.666" starttime="20190512 10:57:03.645"></status>
+<status status="PASS" endtime="20190512 12:42:04.594" starttime="20190512 12:42:04.568"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:03.666" starttime="20190512 10:56:58.233"></status>
+<status status="PASS" endtime="20190512 12:42:04.595" starttime="20190512 12:41:58.352"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Product_Cart_Link_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:03.667" level="INFO">Clicking element 'xpath=(//a[contains(@id,'nav-cart')])'.</msg>
-<status status="PASS" endtime="20190512 10:57:12.398" starttime="20190512 10:57:03.666"></status>
+<msg timestamp="20190512 12:42:04.596" level="INFO">Clicking element 'xpath=(//a[contains(@id,'nav-cart')])'.</msg>
+<status status="PASS" endtime="20190512 12:42:12.431" starttime="20190512 12:42:04.595"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2007,8 +2007,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:12.400" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:12.400" starttime="20190512 10:57:12.400"></status>
+<msg timestamp="20190512 12:42:12.432" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:12.432" starttime="20190512 12:42:12.432"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2017,7 +2017,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:12.577" starttime="20190512 10:57:12.400"></status>
+<status status="PASS" endtime="20190512 12:42:12.521" starttime="20190512 12:42:12.432"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2026,7 +2026,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:12.629" starttime="20190512 10:57:12.577"></status>
+<status status="PASS" endtime="20190512 12:42:12.552" starttime="20190512 12:42:12.522"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2035,9 +2035,9 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:16.181" starttime="20190512 10:57:12.629"></status>
+<status status="PASS" endtime="20190512 12:42:12.583" starttime="20190512 12:42:12.552"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:16.181" starttime="20190512 10:57:12.399"></status>
+<status status="PASS" endtime="20190512 12:42:12.583" starttime="20190512 12:42:12.431"></status>
 </kw>
 <kw name="Strip String" library="String">
 <doc>Remove leading and/or trailing whitespaces from the given string.</doc>
@@ -2048,8 +2048,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${amazon_product_headphone}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.181" level="INFO">${amazon_product_headphone} = (//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
-<status status="PASS" endtime="20190512 10:57:16.181" starttime="20190512 10:57:16.181"></status>
+<msg timestamp="20190512 12:42:12.584" level="INFO">${amazon_product_headphone} = (//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])</msg>
+<status status="PASS" endtime="20190512 12:42:12.585" starttime="20190512 12:42:12.584"></status>
 </kw>
 <kw name="Get Matching Xpath Count" library="CustomSeleniumLibrary">
 <doc>Returns number of elements matching `xpath`</doc>
@@ -2059,8 +2059,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${product_titles}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.198" level="INFO">${product_titles} = 1</msg>
-<status status="PASS" endtime="20190512 10:57:16.198" starttime="20190512 10:57:16.183"></status>
+<msg timestamp="20190512 12:42:12.598" level="INFO">${product_titles} = 1</msg>
+<status status="PASS" endtime="20190512 12:42:12.598" starttime="20190512 12:42:12.585"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -2070,8 +2070,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${product_titles}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.199" level="INFO">${product_titles} = 2</msg>
-<status status="PASS" endtime="20190512 10:57:16.200" starttime="20190512 10:57:16.199"></status>
+<msg timestamp="20190512 12:42:12.600" level="INFO">${product_titles} = 2</msg>
+<status status="PASS" endtime="20190512 12:42:12.600" starttime="20190512 12:42:12.599"></status>
 </kw>
 <kw type="for" name="${i} IN RANGE [ 1 | ${product_titles} ]">
 <kw type="foritem" name="${i} = 1">
@@ -2083,8 +2083,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${delete_headphone}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.201" level="INFO">${delete_headphone} = </msg>
-<status status="PASS" endtime="20190512 10:57:16.201" starttime="20190512 10:57:16.200"></status>
+<msg timestamp="20190512 12:42:12.601" level="INFO">${delete_headphone} = </msg>
+<status status="PASS" endtime="20190512 12:42:12.601" starttime="20190512 12:42:12.601"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -2096,8 +2096,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${delete_headphone}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.201" level="INFO">${delete_headphone} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])[1]</msg>
-<status status="PASS" endtime="20190512 10:57:16.201" starttime="20190512 10:57:16.201"></status>
+<msg timestamp="20190512 12:42:12.602" level="INFO">${delete_headphone} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])[1]</msg>
+<status status="PASS" endtime="20190512 12:42:12.602" starttime="20190512 12:42:12.601"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2112,8 +2112,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.202" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:16.202" starttime="20190512 10:57:16.202"></status>
+<msg timestamp="20190512 12:42:12.603" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:12.603" starttime="20190512 12:42:12.603"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2122,7 +2122,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:16.325" starttime="20190512 10:57:16.202"></status>
+<status status="PASS" endtime="20190512 12:42:12.699" starttime="20190512 12:42:12.603"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2131,7 +2131,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:16.374" starttime="20190512 10:57:16.325"></status>
+<status status="PASS" endtime="20190512 12:42:13.804" starttime="20190512 12:42:12.699"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2140,35 +2140,35 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:16.426" starttime="20190512 10:57:16.375"></status>
+<status status="PASS" endtime="20190512 12:42:13.822" starttime="20190512 12:42:13.805"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:16.426" starttime="20190512 10:57:16.202"></status>
+<status status="PASS" endtime="20190512 12:42:13.822" starttime="20190512 12:42:12.602"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${delete_headphone}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:16.427" level="INFO">Clicking element 'xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])[1]'.</msg>
-<status status="PASS" endtime="20190512 10:57:16.794" starttime="20190512 10:57:16.426"></status>
+<msg timestamp="20190512 12:42:13.822" level="INFO">Clicking element 'xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headphones')])/../../../../../..//input[contains(@name,'submit.delete')])[1]'.</msg>
+<status status="PASS" endtime="20190512 12:42:14.163" starttime="20190512 12:42:13.822"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:16.794" starttime="20190512 10:57:16.200"></status>
+<status status="PASS" endtime="20190512 12:42:14.163" starttime="20190512 12:42:12.601"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:16.794" starttime="20190512 10:57:16.200"></status>
+<status status="PASS" endtime="20190512 12:42:14.163" starttime="20190512 12:42:12.600"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC3</tag>
 </tags>
-<status status="PASS" endtime="20190512 10:57:16.797" critical="yes" starttime="20190512 10:56:58.152"></status>
+<status status="PASS" endtime="20190512 12:42:14.164" critical="yes" starttime="20190512 12:41:58.309"></status>
 </test>
 <test id="s1-t4" name="TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout">
 <kw type="setup" name="Refresh the page">
 <kw name="Reload Page" library="CustomSeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" endtime="20190512 10:57:16.953" starttime="20190512 10:57:16.812"></status>
+<status status="PASS" endtime="20190512 12:42:14.286" starttime="20190512 12:42:14.170"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:16.953" starttime="20190512 10:57:16.810"></status>
+<status status="PASS" endtime="20190512 12:42:14.286" starttime="20190512 12:42:14.169"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2179,12 +2179,12 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'Headp
 <assign>
 <var>${Amazon_Product_Cart_Link_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.967" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:14.294" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006329A58&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A2B70&gt;
 value xpath=(//a[contains(@id,'nav-cart')])</msg>
-<msg timestamp="20190512 10:57:16.967" level="INFO">${Amazon_Product_Cart_Link_xpath} = xpath=(//a[contains(@id,'nav-cart')])</msg>
-<status status="PASS" endtime="20190512 10:57:16.967" starttime="20190512 10:57:16.957"></status>
+<msg timestamp="20190512 12:42:14.294" level="INFO">${Amazon_Product_Cart_Link_xpath} = xpath=(//a[contains(@id,'nav-cart')])</msg>
+<status status="PASS" endtime="20190512 12:42:14.294" starttime="20190512 12:42:14.287"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2195,12 +2195,12 @@ value xpath=(//a[contains(@id,'nav-cart')])</msg>
 <assign>
 <var>${Amazon_Product_MacBook_Titles_Added_In_Cart_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.977" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:14.302" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x0000000006329BE0&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000064A8E10&gt;
 value xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])</msg>
-<msg timestamp="20190512 10:57:16.977" level="INFO">${Amazon_Product_MacBook_Titles_Added_In_Cart_xpath} = xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])</msg>
-<status status="PASS" endtime="20190512 10:57:16.978" starttime="20190512 10:57:16.968"></status>
+<msg timestamp="20190512 12:42:14.302" level="INFO">${Amazon_Product_MacBook_Titles_Added_In_Cart_xpath} = xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])</msg>
+<status status="PASS" endtime="20190512 12:42:14.302" starttime="20190512 12:42:14.295"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2211,12 +2211,12 @@ value xpath=(//span[contains(@class,'sc-product-title')][contains(text(),'MacBoo
 <assign>
 <var>${Amazon_Product_Quantity_Drop_Down_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.987" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:14.308" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640BB00&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006503CC0&gt;
 value xpath=(//select[contains(@name,'quantity')])</msg>
-<msg timestamp="20190512 10:57:16.987" level="INFO">${Amazon_Product_Quantity_Drop_Down_xpath} = xpath=(//select[contains(@name,'quantity')])</msg>
-<status status="PASS" endtime="20190512 10:57:16.987" starttime="20190512 10:57:16.978"></status>
+<msg timestamp="20190512 12:42:14.308" level="INFO">${Amazon_Product_Quantity_Drop_Down_xpath} = xpath=(//select[contains(@name,'quantity')])</msg>
+<status status="PASS" endtime="20190512 12:42:14.308" starttime="20190512 12:42:14.303"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2227,12 +2227,12 @@ value xpath=(//select[contains(@name,'quantity')])</msg>
 <assign>
 <var>${Amazon_Cart_Proceed_To_Checkout_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:16.997" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:14.312" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640B9B0&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006511898&gt;
 value xpath=(//input[contains(@name,'proceedToCheckout')])</msg>
-<msg timestamp="20190512 10:57:16.997" level="INFO">${Amazon_Cart_Proceed_To_Checkout_Button_xpath} = xpath=(//input[contains(@name,'proceedToCheckout')])</msg>
-<status status="PASS" endtime="20190512 10:57:16.998" starttime="20190512 10:57:16.988"></status>
+<msg timestamp="20190512 12:42:14.312" level="INFO">${Amazon_Cart_Proceed_To_Checkout_Button_xpath} = xpath=(//input[contains(@name,'proceedToCheckout')])</msg>
+<status status="PASS" endtime="20190512 12:42:14.312" starttime="20190512 12:42:14.308"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2243,12 +2243,12 @@ value xpath=(//input[contains(@name,'proceedToCheckout')])</msg>
 <assign>
 <var>${Amazon_Checkout_Shipping_Address_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:17.005" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:14.317" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640B5F8&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006511EB8&gt;
 value xpath=(//h1[contains(text(),'shipping address')])</msg>
-<msg timestamp="20190512 10:57:17.005" level="INFO">${Amazon_Checkout_Shipping_Address_xpath} = xpath=(//h1[contains(text(),'shipping address')])</msg>
-<status status="PASS" endtime="20190512 10:57:17.005" starttime="20190512 10:57:16.999"></status>
+<msg timestamp="20190512 12:42:14.317" level="INFO">${Amazon_Checkout_Shipping_Address_xpath} = xpath=(//h1[contains(text(),'shipping address')])</msg>
+<status status="PASS" endtime="20190512 12:42:14.317" starttime="20190512 12:42:14.313"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2259,12 +2259,12 @@ value xpath=(//h1[contains(text(),'shipping address')])</msg>
 <assign>
 <var>${Amazon_Product_MacBook_Quantity_Drop_Down_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:17.010" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:14.322" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640B978&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006511550&gt;
 value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])</msg>
-<msg timestamp="20190512 10:57:17.010" level="INFO">${Amazon_Product_MacBook_Quantity_Drop_Down_xpath} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])</msg>
-<status status="PASS" endtime="20190512 10:57:17.010" starttime="20190512 10:57:17.005"></status>
+<msg timestamp="20190512 12:42:14.322" level="INFO">${Amazon_Product_MacBook_Quantity_Drop_Down_xpath} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])</msg>
+<status status="PASS" endtime="20190512 12:42:14.323" starttime="20190512 12:42:14.318"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2279,8 +2279,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:17.016" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:17.016" starttime="20190512 10:57:17.016"></status>
+<msg timestamp="20190512 12:42:14.324" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:14.324" starttime="20190512 12:42:14.323"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2289,7 +2289,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:24.726" starttime="20190512 10:57:17.016"></status>
+<status status="PASS" endtime="20190512 12:42:19.358" starttime="20190512 12:42:14.324"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2298,7 +2298,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:24.757" starttime="20190512 10:57:24.726"></status>
+<status status="PASS" endtime="20190512 12:42:19.389" starttime="20190512 12:42:19.358"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2307,17 +2307,17 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:24.783" starttime="20190512 10:57:24.757"></status>
+<status status="PASS" endtime="20190512 12:42:19.411" starttime="20190512 12:42:19.389"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:24.783" starttime="20190512 10:57:17.015"></status>
+<status status="PASS" endtime="20190512 12:42:19.411" starttime="20190512 12:42:14.323"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Product_Cart_Link_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:24.784" level="INFO">Clicking element 'xpath=(//a[contains(@id,'nav-cart')])'.</msg>
-<status status="PASS" endtime="20190512 10:57:29.026" starttime="20190512 10:57:24.784"></status>
+<msg timestamp="20190512 12:42:19.412" level="INFO">Clicking element 'xpath=(//a[contains(@id,'nav-cart')])'.</msg>
+<status status="PASS" endtime="20190512 12:42:23.556" starttime="20190512 12:42:19.412"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2332,8 +2332,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:29.030" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:29.030" starttime="20190512 10:57:29.029"></status>
+<msg timestamp="20190512 12:42:23.558" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:23.558" starttime="20190512 12:42:23.558"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2342,7 +2342,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:29.213" starttime="20190512 10:57:29.030"></status>
+<status status="PASS" endtime="20190512 12:42:23.662" starttime="20190512 12:42:23.558"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2351,7 +2351,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:30.703" starttime="20190512 10:57:29.213"></status>
+<status status="PASS" endtime="20190512 12:42:23.723" starttime="20190512 12:42:23.662"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2360,9 +2360,9 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:30.730" starttime="20190512 10:57:30.703"></status>
+<status status="PASS" endtime="20190512 12:42:23.748" starttime="20190512 12:42:23.723"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:30.731" starttime="20190512 10:57:29.027"></status>
+<status status="PASS" endtime="20190512 12:42:23.748" starttime="20190512 12:42:23.557"></status>
 </kw>
 <kw name="Strip String" library="String">
 <doc>Remove leading and/or trailing whitespaces from the given string.</doc>
@@ -2373,8 +2373,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${amazon_product_macbook}</var>
 </assign>
-<msg timestamp="20190512 10:57:30.732" level="INFO">${amazon_product_macbook} = (//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])</msg>
-<status status="PASS" endtime="20190512 10:57:30.732" starttime="20190512 10:57:30.731"></status>
+<msg timestamp="20190512 12:42:23.750" level="INFO">${amazon_product_macbook} = (//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])</msg>
+<status status="PASS" endtime="20190512 12:42:23.750" starttime="20190512 12:42:23.749"></status>
 </kw>
 <kw name="Get Matching Xpath Count" library="CustomSeleniumLibrary">
 <doc>Returns number of elements matching `xpath`</doc>
@@ -2384,8 +2384,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${product_titles}</var>
 </assign>
-<msg timestamp="20190512 10:57:30.750" level="INFO">${product_titles} = 1</msg>
-<status status="PASS" endtime="20190512 10:57:30.750" starttime="20190512 10:57:30.732"></status>
+<msg timestamp="20190512 12:42:23.762" level="INFO">${product_titles} = 1</msg>
+<status status="PASS" endtime="20190512 12:42:23.762" starttime="20190512 12:42:23.751"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -2395,8 +2395,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${product_titles}</var>
 </assign>
-<msg timestamp="20190512 10:57:30.751" level="INFO">${product_titles} = 2</msg>
-<status status="PASS" endtime="20190512 10:57:30.751" starttime="20190512 10:57:30.750"></status>
+<msg timestamp="20190512 12:42:23.763" level="INFO">${product_titles} = 2</msg>
+<status status="PASS" endtime="20190512 12:42:23.763" starttime="20190512 12:42:23.762"></status>
 </kw>
 <kw type="for" name="${i} IN RANGE [ 1 | ${product_titles} ]">
 <kw type="foritem" name="${i} = 1">
@@ -2408,8 +2408,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${change_quantity}</var>
 </assign>
-<msg timestamp="20190512 10:57:30.752" level="INFO">${change_quantity} = </msg>
-<status status="PASS" endtime="20190512 10:57:30.752" starttime="20190512 10:57:30.751"></status>
+<msg timestamp="20190512 12:42:23.763" level="INFO">${change_quantity} = </msg>
+<status status="PASS" endtime="20190512 12:42:23.764" starttime="20190512 12:42:23.763"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -2421,8 +2421,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${change_quantity}</var>
 </assign>
-<msg timestamp="20190512 10:57:30.752" level="INFO">${change_quantity} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])[1]</msg>
-<status status="PASS" endtime="20190512 10:57:30.752" starttime="20190512 10:57:30.752"></status>
+<msg timestamp="20190512 12:42:23.764" level="INFO">${change_quantity} = xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])[1]</msg>
+<status status="PASS" endtime="20190512 12:42:23.764" starttime="20190512 12:42:23.764"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2437,8 +2437,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:30.753" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:30.753" starttime="20190512 10:57:30.753"></status>
+<msg timestamp="20190512 12:42:23.766" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:23.767" starttime="20190512 12:42:23.766"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2447,7 +2447,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:30.894" starttime="20190512 10:57:30.753"></status>
+<status status="PASS" endtime="20190512 12:42:26.252" starttime="20190512 12:42:23.767"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2456,7 +2456,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:30.920" starttime="20190512 10:57:30.895"></status>
+<status status="PASS" endtime="20190512 12:42:26.279" starttime="20190512 12:42:26.253"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2465,9 +2465,9 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:30.943" starttime="20190512 10:57:30.920"></status>
+<status status="PASS" endtime="20190512 12:42:26.300" starttime="20190512 12:42:26.279"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:30.944" starttime="20190512 10:57:30.752"></status>
+<status status="PASS" endtime="20190512 12:42:26.300" starttime="20190512 12:42:23.765"></status>
 </kw>
 <kw name="Select From List By Value" library="CustomSeleniumLibrary">
 <doc>Selects `*values` from list identified by `locator`</doc>
@@ -2475,12 +2475,12 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${change_quantity}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20190512 10:57:30.944" level="INFO">Selecting value(s) '1' from list 'xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])[1]'.</msg>
-<status status="PASS" endtime="20190512 10:57:31.254" starttime="20190512 10:57:30.944"></status>
+<msg timestamp="20190512 12:42:26.300" level="INFO">Selecting value(s) '1' from list 'xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBook')])/../../../..//../../../../..//select[contains(@name,'quantity')])[1]'.</msg>
+<status status="PASS" endtime="20190512 12:42:26.577" starttime="20190512 12:42:26.300"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:31.254" starttime="20190512 10:57:30.751"></status>
+<status status="PASS" endtime="20190512 12:42:26.577" starttime="20190512 12:42:23.763"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:31.254" starttime="20190512 10:57:30.751"></status>
+<status status="PASS" endtime="20190512 12:42:26.577" starttime="20190512 12:42:23.763"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2495,8 +2495,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:31.258" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:31.258" starttime="20190512 10:57:31.258"></status>
+<msg timestamp="20190512 12:42:26.580" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:26.580" starttime="20190512 12:42:26.579"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2505,7 +2505,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:31.370" starttime="20190512 10:57:31.259"></status>
+<status status="PASS" endtime="20190512 12:42:26.684" starttime="20190512 12:42:26.580"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2514,7 +2514,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:31.399" starttime="20190512 10:57:31.370"></status>
+<status status="PASS" endtime="20190512 12:42:26.711" starttime="20190512 12:42:26.685"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2523,17 +2523,17 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:31.421" starttime="20190512 10:57:31.399"></status>
+<status status="PASS" endtime="20190512 12:42:26.733" starttime="20190512 12:42:26.711"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:31.421" starttime="20190512 10:57:31.257"></status>
+<status status="PASS" endtime="20190512 12:42:26.733" starttime="20190512 12:42:26.578"></status>
 </kw>
 <kw name="Click Element" library="CustomSeleniumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${Amazon_Cart_Proceed_To_Checkout_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:31.422" level="INFO">Clicking element 'xpath=(//input[contains(@name,'proceedToCheckout')])'.</msg>
-<status status="PASS" endtime="20190512 10:57:35.193" starttime="20190512 10:57:31.421"></status>
+<msg timestamp="20190512 12:42:26.734" level="INFO">Clicking element 'xpath=(//input[contains(@name,'proceedToCheckout')])'.</msg>
+<status status="PASS" endtime="20190512 12:42:31.491" starttime="20190512 12:42:26.734"></status>
 </kw>
 <kw name="Wait Keyword">
 <arguments>
@@ -2548,8 +2548,8 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:35.195" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:35.195" starttime="20190512 10:57:35.194"></status>
+<msg timestamp="20190512 12:42:31.494" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:31.494" starttime="20190512 12:42:31.493"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2558,7 +2558,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:35.317" starttime="20190512 10:57:35.195"></status>
+<status status="PASS" endtime="20190512 12:42:31.671" starttime="20190512 12:42:31.494"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2567,7 +2567,7 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:35.347" starttime="20190512 10:57:35.318"></status>
+<status status="PASS" endtime="20190512 12:42:31.702" starttime="20190512 12:42:31.672"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2576,15 +2576,15 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:35.372" starttime="20190512 10:57:35.347"></status>
+<status status="PASS" endtime="20190512 12:42:31.721" starttime="20190512 12:42:31.703"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:35.373" starttime="20190512 10:57:35.193"></status>
+<status status="PASS" endtime="20190512 12:42:31.721" starttime="20190512 12:42:31.493"></status>
 </kw>
 <tags>
 <tag>Sanity</tag>
 <tag>TC4</tag>
 </tags>
-<status status="PASS" endtime="20190512 10:57:35.374" critical="yes" starttime="20190512 10:57:16.808"></status>
+<status status="PASS" endtime="20190512 12:42:31.722" critical="yes" starttime="20190512 12:42:14.167"></status>
 </test>
 <kw type="teardown" name="Browser Close">
 <kw name="Logout">
@@ -2597,12 +2597,12 @@ value xpath=((//span[contains(@class,'sc-product-title')][contains(text(),'MacBo
 <assign>
 <var>${websites homepage url}</var>
 </assign>
-<msg timestamp="20190512 10:57:35.383" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
+<msg timestamp="20190512 12:42:31.727" level="INFO">datafile D:\Amazon Automation\Go-Jek\URLs\Url.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640B4A8&gt;
+workbook &lt;xlrd.book.Book object at 0x00000000065113C8&gt;
 value https://www.amazon.com</msg>
-<msg timestamp="20190512 10:57:35.383" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
-<status status="PASS" endtime="20190512 10:57:35.383" starttime="20190512 10:57:35.378"></status>
+<msg timestamp="20190512 12:42:31.727" level="INFO">${websites homepage url} = https://www.amazon.com</msg>
+<status status="PASS" endtime="20190512 12:42:31.727" starttime="20190512 12:42:31.725"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2613,12 +2613,12 @@ value https://www.amazon.com</msg>
 <assign>
 <var>${Amazon_Home_Page_Sign_In_Text_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:35.392" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:31.734" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640B320&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006511978&gt;
 value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
-<msg timestamp="20190512 10:57:35.392" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
-<status status="PASS" endtime="20190512 10:57:35.393" starttime="20190512 10:57:35.383"></status>
+<msg timestamp="20190512 12:42:31.734" level="INFO">${Amazon_Home_Page_Sign_In_Text_xpath} = xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
+<status status="PASS" endtime="20190512 12:42:31.734" starttime="20190512 12:42:31.727"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2629,12 +2629,12 @@ value xpath=(//span[contains(text(),'Hello, Sign in')]/..)</msg>
 <assign>
 <var>${Amazon_Hello_Text_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:35.403" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:31.738" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000640BBA8&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006511B38&gt;
 value xpath=(//span[contains(text(),'Hello')])</msg>
-<msg timestamp="20190512 10:57:35.404" level="INFO">${Amazon_Hello_Text_xpath} = xpath=(//span[contains(text(),'Hello')])</msg>
-<status status="PASS" endtime="20190512 10:57:35.404" starttime="20190512 10:57:35.393"></status>
+<msg timestamp="20190512 12:42:31.738" level="INFO">${Amazon_Hello_Text_xpath} = xpath=(//span[contains(text(),'Hello')])</msg>
+<status status="PASS" endtime="20190512 12:42:31.738" starttime="20190512 12:42:31.734"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2645,12 +2645,12 @@ value xpath=(//span[contains(text(),'Hello')])</msg>
 <assign>
 <var>${Amazon_Sign_Out_Button_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:35.413" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:31.743" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x00000000063EA1D0&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006511E48&gt;
 value xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
-<msg timestamp="20190512 10:57:35.413" level="INFO">${Amazon_Sign_Out_Button_xpath} = xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
-<status status="PASS" endtime="20190512 10:57:35.413" starttime="20190512 10:57:35.404"></status>
+<msg timestamp="20190512 12:42:31.743" level="INFO">${Amazon_Sign_Out_Button_xpath} = xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
+<status status="PASS" endtime="20190512 12:42:31.743" starttime="20190512 12:42:31.739"></status>
 </kw>
 <kw name="Fetch Data For Given Data Key From Given Datasheet Of Given Datafile" library="Amazon_Python_Utility">
 <arguments>
@@ -2661,20 +2661,20 @@ value xpath=(//span[contains(text(),'Sign Out')]/..)</msg>
 <assign>
 <var>${Verify_Amazon_Sign_In_Text_xpath}</var>
 </assign>
-<msg timestamp="20190512 10:57:35.424" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
+<msg timestamp="20190512 12:42:31.748" level="INFO">datafile D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx
 File exists
-workbook &lt;xlrd.book.Book object at 0x000000000643AEB8&gt;
+workbook &lt;xlrd.book.Book object at 0x0000000006537DD8&gt;
 value xpath=//h1[contains(text(),'Sign in')]</msg>
-<msg timestamp="20190512 10:57:35.424" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
-<status status="PASS" endtime="20190512 10:57:35.424" starttime="20190512 10:57:35.413"></status>
+<msg timestamp="20190512 12:42:31.748" level="INFO">${Verify_Amazon_Sign_In_Text_xpath} = xpath=//h1[contains(text(),'Sign in')]</msg>
+<status status="PASS" endtime="20190512 12:42:31.748" starttime="20190512 12:42:31.743"></status>
 </kw>
 <kw name="Go To" library="CustomSeleniumLibrary">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>${websites homepage url}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:35.425" level="INFO">Opening url 'https://www.amazon.com'</msg>
-<status status="PASS" endtime="20190512 10:57:37.963" starttime="20190512 10:57:35.424"></status>
+<msg timestamp="20190512 12:42:31.750" level="INFO">Opening url 'https://www.amazon.com'</msg>
+<status status="PASS" endtime="20190512 12:42:33.707" starttime="20190512 12:42:31.749"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -2696,8 +2696,8 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:37.965" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:37.966" starttime="20190512 10:57:37.965"></status>
+<msg timestamp="20190512 12:42:33.708" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:33.708" starttime="20190512 12:42:33.708"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2706,7 +2706,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:38.122" starttime="20190512 10:57:37.966"></status>
+<status status="PASS" endtime="20190512 12:42:33.824" starttime="20190512 12:42:33.709"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2715,7 +2715,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:38.171" starttime="20190512 10:57:38.123"></status>
+<status status="PASS" endtime="20190512 12:42:33.856" starttime="20190512 12:42:33.824"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2724,11 +2724,11 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:39.497" starttime="20190512 10:57:38.172"></status>
+<status status="PASS" endtime="20190512 12:42:33.875" starttime="20190512 12:42:33.856"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:39.497" starttime="20190512 10:57:37.964"></status>
+<status status="PASS" endtime="20190512 12:42:33.875" starttime="20190512 12:42:33.708"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:39.497" starttime="20190512 10:57:37.963"></status>
+<status status="PASS" endtime="20190512 12:42:33.875" starttime="20190512 12:42:33.707"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -2741,10 +2741,10 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arguments>
 <arg>${Amazon_Hello_Text_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:39.498" level="INFO">Simulating Mouse Over on element 'xpath=(//span[contains(text(),'Hello')])'</msg>
-<status status="PASS" endtime="20190512 10:57:39.657" starttime="20190512 10:57:39.498"></status>
+<msg timestamp="20190512 12:42:33.876" level="INFO">Simulating Mouse Over on element 'xpath=(//span[contains(text(),'Hello')])'</msg>
+<status status="PASS" endtime="20190512 12:42:35.711" starttime="20190512 12:42:33.876"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:39.657" starttime="20190512 10:57:39.498"></status>
+<status status="PASS" endtime="20190512 12:42:35.711" starttime="20190512 12:42:33.875"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -2766,8 +2766,8 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:39.659" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:39.659" starttime="20190512 10:57:39.659"></status>
+<msg timestamp="20190512 12:42:35.714" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:35.714" starttime="20190512 12:42:35.713"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2776,7 +2776,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:39.809" starttime="20190512 10:57:39.659"></status>
+<status status="PASS" endtime="20190512 12:42:35.820" starttime="20190512 12:42:35.714"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2785,7 +2785,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:39.847" starttime="20190512 10:57:39.810"></status>
+<status status="PASS" endtime="20190512 12:42:35.854" starttime="20190512 12:42:35.821"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2794,11 +2794,11 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:39.877" starttime="20190512 10:57:39.848"></status>
+<status status="PASS" endtime="20190512 12:42:35.875" starttime="20190512 12:42:35.854"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:39.877" starttime="20190512 10:57:39.658"></status>
+<status status="PASS" endtime="20190512 12:42:35.875" starttime="20190512 12:42:35.712"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:39.877" starttime="20190512 10:57:39.657"></status>
+<status status="PASS" endtime="20190512 12:42:35.875" starttime="20190512 12:42:35.712"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -2811,10 +2811,10 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arguments>
 <arg>${Amazon_Sign_Out_Button_xpath}</arg>
 </arguments>
-<msg timestamp="20190512 10:57:39.878" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Sign Out')]/..)'.</msg>
-<status status="PASS" endtime="20190512 10:57:42.247" starttime="20190512 10:57:39.878"></status>
+<msg timestamp="20190512 12:42:35.876" level="INFO">Clicking element 'xpath=(//span[contains(text(),'Sign Out')]/..)'.</msg>
+<status status="PASS" endtime="20190512 12:42:38.442" starttime="20190512 12:42:35.876"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:42.248" starttime="20190512 10:57:39.877"></status>
+<status status="PASS" endtime="20190512 12:42:38.442" starttime="20190512 12:42:35.875"></status>
 </kw>
 <kw name="Run Keyword And Continue On Failure" library="BuiltIn">
 <doc>Runs the keyword and continues execution even if a failure occurs.</doc>
@@ -2836,8 +2836,8 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <assign>
 <var>${Delay}</var>
 </assign>
-<msg timestamp="20190512 10:57:42.250" level="INFO">${Delay} = 40s</msg>
-<status status="PASS" endtime="20190512 10:57:42.250" starttime="20190512 10:57:42.249"></status>
+<msg timestamp="20190512 12:42:38.446" level="INFO">${Delay} = 40s</msg>
+<status status="PASS" endtime="20190512 12:42:38.446" starttime="20190512 12:42:38.445"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -2846,7 +2846,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>Page does not contain the ${Message}</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:42.358" starttime="20190512 10:57:42.250"></status>
+<status status="PASS" endtime="20190512 12:42:38.564" starttime="20190512 12:42:38.446"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2855,7 +2855,7 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not displayed on the page</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:42.399" starttime="20190512 10:57:42.358"></status>
+<status status="PASS" endtime="20190512 12:42:38.588" starttime="20190512 12:42:38.564"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="CustomSeleniumLibrary">
 <doc>Waits until element specified with `locator` is enabled.</doc>
@@ -2864,21 +2864,21 @@ value xpath=//h1[contains(text(),'Sign in')]</msg>
 <arg>${Delay}</arg>
 <arg>${Message} is not enabled</arg>
 </arguments>
-<status status="PASS" endtime="20190512 10:57:42.420" starttime="20190512 10:57:42.399"></status>
+<status status="PASS" endtime="20190512 12:42:38.606" starttime="20190512 12:42:38.588"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:42.420" starttime="20190512 10:57:42.248"></status>
+<status status="PASS" endtime="20190512 12:42:38.606" starttime="20190512 12:42:38.444"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:42.420" starttime="20190512 10:57:42.248"></status>
+<status status="PASS" endtime="20190512 12:42:38.606" starttime="20190512 12:42:38.444"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:42.420" starttime="20190512 10:57:35.378"></status>
+<status status="PASS" endtime="20190512 12:42:38.606" starttime="20190512 12:42:31.725"></status>
 </kw>
 <kw name="Close All Browsers" library="CustomSeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" endtime="20190512 10:57:45.139" starttime="20190512 10:57:42.420"></status>
+<status status="PASS" endtime="20190512 12:42:41.119" starttime="20190512 12:42:38.607"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:45.140" starttime="20190512 10:57:35.377"></status>
+<status status="PASS" endtime="20190512 12:42:41.119" starttime="20190512 12:42:31.725"></status>
 </kw>
-<status status="PASS" endtime="20190512 10:57:45.140" starttime="20190512 10:52:19.076"></status>
+<status status="PASS" endtime="20190512 12:42:41.119" starttime="20190512 12:38:19.947"></status>
 </suite>
 <statistics>
 <total>
