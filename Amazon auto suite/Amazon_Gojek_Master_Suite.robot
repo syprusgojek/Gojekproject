@@ -12,6 +12,7 @@ ${locators_file_path}    D:\\Amazon Automation\\Go-Jek\\Locators\\Amazon_Locator
 ${Urls_File_Path}    D:\\Amazon Automation\\Go-Jek\\URLs\\Url.xlsx
 ${Credentials_file_path}    D:\\Amazon Automation\\Go-Jek\\Credentials\\Amazon_Credentials.xlsx
 ${chrome_exe_path}    D:\\Amazon Automation\\Go-Jek\\Driver for chrome\\chromedriver.exe
+@{product_names_for_search}    MacBook Pro    Iphone    Macbook    Macbook Air
 
 *** Test Cases ***
 TC_Select_Available_Headphone_And_Add_to_Cart
@@ -67,10 +68,10 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     Comment    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
     Comment    Select Frame    xpath=//iframe[@id='DAsis']
     Select Frame    ${Amazon_Macbook_Order_Iframe_xpath}
-    ${h}=    Get Window Titles
-    log    ${h}
-    ${e}=    Get Window Names
-    log    ${e}
+    ${Window_titles}=    Get Window Titles
+    log    ${Window_titles}
+    ${Window_Names}=    Get Window Names
+    log    ${Window_Names}
     Wait Keyword    ${Amazon_Macbook_Order_Continue_Button_xpath}    Continue button
     Click Element    ${Amazon_Macbook_Order_Continue_Button_xpath}
     sleep    2s

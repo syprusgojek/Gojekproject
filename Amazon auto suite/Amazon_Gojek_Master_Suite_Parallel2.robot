@@ -12,8 +12,10 @@ ${locators_file_path}    D:\\Amazon Automation\\Go-Jek\\Locators\\Amazon_Locator
 ${Urls_File_Path}    D:\\Amazon Automation\\Go-Jek\\URLs\\Url.xlsx
 ${Credentials_file_path}    D:\\Amazon Automation\\Go-Jek\\Credentials\\Amazon_Credentials.xlsx
 ${chrome_exe_path}    D:\\Amazon Automation\\Go-Jek\\Driver for chrome\\chromedriver.exe
+@{product_names_for_search}    MacBook Pro    Iphone    Macbook    Macbook Air
 
 *** Test Cases ***
+
 TC_Search_MacBookPro_Add_Second_Product_To_Cart
     [Tags]    TC1    Sanity
     ${Amazon_Search_Text_Box_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Search_Text_Box_xpath
@@ -27,8 +29,9 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     ${Amazon_Macbook_Order_Close_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Close_Button_xpath
     ${Amazon_Macbook_Order_Continue_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Continue_Button_xpath
     ${Amazon_Macbook_Order_Iframe_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Macbook_Order_Iframe_xpath
+    ${Product_Name}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    test_data    Product_Name
     Wait Keyword    ${Amazon_Search_Text_Box_xpath}    Search Text Box
-    Input Text    ${Amazon_Search_Text_Box_xpath}    Macbook pro
+    Input Text    ${Amazon_Search_Text_Box_xpath}    ${Product_Name}
     Wait Keyword    ${Amazon_Search_Submit_Button_xpath}    Headphones
     Click Element    ${Amazon_Search_Submit_Button_xpath}
     Wait Keyword    ${Amazon_Search_Second_Product_xpath}    Macbook second product
@@ -41,11 +44,16 @@ TC_Search_MacBookPro_Add_Second_Product_To_Cart
     Comment    Run Keyword If    ${status}==True    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
     Comment    Wait Keyword    ${Amazon_Macbook_Order_Close_Button_xpath}    Macbook Close button
     Comment    Click Element    ${Amazon_Macbook_Order_Close_Button_xpath}
+    Comment    Select Frame    xpath=//iframe[@id='DAsis']
     Select Frame    ${Amazon_Macbook_Order_Iframe_xpath}
+    ${Window_titles}=    Get Window Titles
+    log    ${Window_titles}
+    ${Window_Names}=    Get Window Names
+    log    ${Window_Names}
     Wait Keyword    ${Amazon_Macbook_Order_Continue_Button_xpath}    Continue button
     Click Element    ${Amazon_Macbook_Order_Continue_Button_xpath}
+    sleep    2s
     Wait Keyword    ${Verify_Amazon_Added_To_Cart_Text_Message_Macbook_xpath}    Added to Cart Message
-
 
 TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
     [Tags]    TC2    Sanity
@@ -54,6 +62,7 @@ TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
     ${Amazon_Product_Quantity_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Quantity_Drop_Down_xpath
     ${Amazon_Cart_Proceed_To_Checkout_Button_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Cart_Proceed_To_Checkout_Button_xpath
     ${Amazon_Checkout_Shipping_Address_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Checkout_Shipping_Address_xpath
+    ${Amazon_Product_MacBook_Quantity_Drop_Down_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_MacBook_Quantity_Drop_Down_xpath
     Wait Keyword    ${Amazon_Product_Cart_Link_xpath}    Cart Icon
     Click Element    ${Amazon_Product_Cart_Link_xpath}
     Wait Keyword    ${Amazon_Product_MacBook_Titles_Added_In_Cart_xpath}    Product Titles
@@ -62,7 +71,7 @@ TC_Reduce_The_Quantity_Of_MacBook_Pro_And_Checkout
     ${product_titles}=    Evaluate    ${product_titles}+1
     :FOR    ${i}     IN RANGE    1    ${product_titles}
     \    ${change_quantity}=    Set Variable    ${EMPTY}
-    \    ${change_quantity}=    Catenate    SEPARATOR=    ${Amazon_Product_Quantity_Drop_Down_xpath}    [${i}]
+    \    ${change_quantity}=    Catenate    SEPARATOR=    ${Amazon_Product_MacBook_Quantity_Drop_Down_xpath}    [${i}]
     \    Wait Keyword    ${change_quantity}    Change Quantity Macbook pro
     \    Select From List By Value    ${change_quantity}    1
     Wait Keyword    ${Amazon_Cart_Proceed_To_Checkout_Button_xpath}    Proceed to checkout
@@ -108,7 +117,7 @@ Refresh the page
 Wait Keyword
     [Arguments]    ${locator}    ${Message}
     #log    ${locator}
-    ${Delay} =    Convert To String    30s
+    ${Delay} =    Convert To String    40s
     Wait Until Page Contains Element    ${locator}    ${Delay}    Page does not contain the ${Message}
     Wait Until Element Is Visible    ${locator}    ${Delay}    ${Message} is not displayed on the page
     Wait Until Element Is Enabled    ${locator}    ${Delay}    ${Message} is not enabled

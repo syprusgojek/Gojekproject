@@ -12,6 +12,7 @@ ${locators_file_path}    D:\\Amazon Automation\\Go-Jek\\Locators\\Amazon_Locator
 ${Urls_File_Path}    D:\\Amazon Automation\\Go-Jek\\URLs\\Url.xlsx
 ${Credentials_file_path}    D:\\Amazon Automation\\Go-Jek\\Credentials\\Amazon_Credentials.xlsx
 ${chrome_exe_path}    D:\\Amazon Automation\\Go-Jek\\Driver for chrome\\chromedriver.exe
+@{product_names_for_search}    MacBook Pro    Iphone    Macbook    Macbook Air
 
 *** Test Cases ***
 TC_Select_Available_Headphone_And_Add_to_Cart
@@ -37,12 +38,11 @@ TC_Select_Available_Headphone_And_Add_to_Cart
     Wait Keyword    ${Amazon_Cart_Close_Button_xpath}    Close Button
     Click Element    ${Amazon_Cart_Close_Button_xpath}
 
-
 TC_Remove_Earlier_Added_Headphones
     [Tags]    TC2    Sanity
     ${Amazon_Product_Cart_Link_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Cart_Link_xpath
     ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Headphones_Titles_Added_In_Cart_xpath
-    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Delete_Buttons_Added_In_Cart_xpath
+    ${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath}=    fetch_data_for_given_data_key_from_given_datasheet_of_given_datafile    ${locators_file_path}    Locator_ids    Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath
     Wait Keyword    ${Amazon_Product_Cart_Link_xpath}    Cart Icon
     Click Element    ${Amazon_Product_Cart_Link_xpath}
     Wait Keyword    ${Amazon_Product_Headphones_Titles_Added_In_Cart_xpath}    Product Titles
@@ -51,7 +51,7 @@ TC_Remove_Earlier_Added_Headphones
     ${product_titles}=    Evaluate    ${product_titles}+1
     :FOR    ${i}     IN RANGE    1    ${product_titles}
     \    ${delete_headphone}=    Set Variable    ${EMPTY}
-    \    ${delete_headphone}=    Catenate    SEPARATOR=    ${Amazon_Product_Delete_Buttons_Added_In_Cart_xpath}    [${i}]
+    \    ${delete_headphone}=    Catenate    SEPARATOR=    ${Amazon_Product_Headphones_Delete_Buttons_Added_In_Cart_xpath}    [${i}]
     \    Wait Keyword    ${delete_headphone}    Delete Headphone
     \    Click Element    ${delete_headphone}
 
@@ -95,7 +95,7 @@ Refresh the page
 Wait Keyword
     [Arguments]    ${locator}    ${Message}
     #log    ${locator}
-    ${Delay} =    Convert To String    30s
+    ${Delay} =    Convert To String    40s
     Wait Until Page Contains Element    ${locator}    ${Delay}    Page does not contain the ${Message}
     Wait Until Element Is Visible    ${locator}    ${Delay}    ${Message} is not displayed on the page
     Wait Until Element Is Enabled    ${locator}    ${Delay}    ${Message} is not enabled
