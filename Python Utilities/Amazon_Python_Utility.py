@@ -5,10 +5,10 @@ from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.common.exceptions import ElementNotVisibleException
 from selenium.common.exceptions import WebDriverException
 from Selenium2Library import Selenium2Library
-import re
-import locale
+#import re
+#import locale
 from selenium.webdriver.support.ui import Select
-import datetime
+#import datetime
 import os
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By

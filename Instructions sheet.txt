@@ -1,0 +1,49 @@
+Instructions to run to automate the amazon:
+
+1)Please install Python version 2.7.
+
+2)Please install Python dependencies using the following commands in cmd:
+	pip install robotframework
+	pip install robotframework-selenium2library
+	pip install robotframework-pabot
+	pip install selenium
+	pip install urllib3
+	pip install robotframework-ride
+
+3) Store the contents as "D:\Amazon Automation\Go-Jek"	
+
+4) Download the latest chromedriver.exe  and place it in this path "D:\Amazon Automation\Go-Jek\Driver for chrome"
+
+5) For running the whole suite at once navigate to the path "D:\Amazon Automation\Go-Jek\Amazon auto suite" and use the following command: robot --include Sanity --outputdir "D:\\Amazon Automation\\Go-Jek\\Reports"  Amazon_Gojek_Master_Suite.robot
+
+	- 4 testcases will run sequentially.
+
+6) For Parallel execution of suites navigate to the path "D:\Amazon Automation\Go-Jek\Amazon auto suite" and  use the following command : pabot --processes 2 --outputdir "D:\\Amazon Automation\\Go-Jek\\Reports"  Amazon_Gojek_Master_Suite_Parallel*.robot
+
+	- Two browser windows will open - 1) to execute headphone testcases 2) to execute macbook testcases
+
+7) Please find the reports in the following path :-"D:\Amazon Automation\Go-Jek\Reports"
+
+8) Google Account :
+	user name : syprusgojek@gmail.com pwd:RoBotFra@432
+   Amazon Account : user name : syprusgojek@gmail.com pwd:RoBotFra@432
+   Github account : user name : syprusgojek   pwd:RoBotFra@432
+
+9) For searching the products I have given the value from the excel but it can also be parameterized to multiple products . I have declared list variable for multiple search . It can be used if required.
+
+10) Please delete the products in cart if it is present before proceeding.
+
+
+Overall structure:
+
+Master suites --> "D:\Amazon Automation\Go-Jek\Amazon auto suite\"
+
+Amazon Credentials stored in excel --> "D:\Amazon Automation\Go-Jek\Credentials\Amazon_Credentials.xlsx"
+
+Locators are stored in --> "D:\Amazon Automation\Go-Jek\Locators\Amazon_Locators.xlsx"
+	Locators has 2 parts:
+		1) Locator_ids --> Element where some operation is done.
+		2) Verification_Entity --> Elements used just to verify whether page is loaded or operation is done.
+
+Python utilities are stored in -->D:\Amazon Automation\Go-Jek\Python Utilities
+Url is stored in -->D:\Amazon Automation\Go-Jek\URLs
